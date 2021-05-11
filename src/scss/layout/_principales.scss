@@ -2,7 +2,11 @@
     width: 50%;
     float:left;
 }
-
+.info-index{
+    p{
+        line-height: .5rem;
+    }
+}
 .informacion-inicial 
 {
     color:$blanco;
@@ -22,7 +26,6 @@
     }
     p {
         color: $blanco;
-        line-height: .5rem;
     }
 
     .logo-uam{

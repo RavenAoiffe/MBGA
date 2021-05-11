@@ -64,6 +64,9 @@ nav {
   width: 50%;
   float: left; }
 
+.info-index p {
+  line-height: .5rem; }
+
 .informacion-inicial {
   color: #ffffff;
   margin-bottom: 12rem; }
@@ -78,8 +81,7 @@ nav {
   .informacion-inicial h3 {
     font-size: 3rem; }
   .informacion-inicial p {
-    color: #ffffff;
-    line-height: .5rem; }
+    color: #ffffff; }
   .informacion-inicial .logo-uam {
     max-width: 200px;
     padding: 3rem 0;
@@ -151,14 +153,41 @@ nav {
       .lista-de-proyectos ul a:hover .overlay {
         opacity: 1; }
 
-.verdePizarron {
+.verdePizarronBg {
   background-color: #055c4f; }
 
-.azulRey {
+.azulReyBg {
   background-color: #030845; }
 
-.durazno {
+.duraznoBg {
   background-color: #c55428; }
 
-.rojoLeve {
+.rojoLeveBg {
   background-color: #bd2136; }
+
+.rojoFuerteBg {
+  background-color: #781221; }
+
+.moradoFuerteBg {
+  background-color: #21214a; }
+
+.naranjaBg {
+  background-color: #fa421c; }
+
+.azulBg {
+  background-color: #2b4d70; }
+
+.verdeBg {
+  background-color: #294030; }
+
+.carneBg {
+  background-color: #cc996b; }
+
+.grisAzulBg {
+  background-color: #808c80; }
+
+.moradoBg {
+  background-color: #a38cb5; }
+
+.negroBg {
+  background-color: #000000; }

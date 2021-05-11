@@ -50,18 +50,42 @@
        }
     }
 }
-.verdePizarron{
+.verdePizarronBg{
     @include coloBg($verdePizarron)
 }
-
-.azulRey{
+.azulReyBg{
     @include coloBg($azulRey)
 }
-
-.durazno{
+.duraznoBg{
     @include coloBg($durazno)
 }
-
-.rojoLeve{
+.rojoLeveBg{
     @include coloBg($rojoLeve)
+}
+.rojoFuerteBg{
+    @include coloBg($rojoFuerte)
+}
+.moradoFuerteBg{
+    @include coloBg($moradoFuerte)
+}
+.naranjaBg{
+    @include coloBg($naranja)
+}
+.azulBg{
+    @include coloBg($azul)
+}
+.verdeBg{
+    @include coloBg($verde)
+}
+.carneBg{
+    @include coloBg($carne)
+}
+.grisAzulBg{
+    @include coloBg($grisAzul)
+}
+.moradoBg{
+    @include coloBg($morado)
+}
+.negroBg{
+    @include coloBg($negro)
 }
