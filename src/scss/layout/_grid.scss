@@ -1,0 +1,52 @@
+.lista-de-proyectos{
+    position: absolute;
+    right: 10%;
+    ul{
+        list-style: none;
+        column-count: 4;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        float:right;
+
+        img {
+            width: 20rem;
+            height:20rem;
+        }
+       .overlay{
+            position: absolute;
+            top: 1.5rem;
+            height: 20rem;
+            width: 20rem;
+            opacity: 0;
+            transition: .5s ease;
+            p{
+                color: $blanco;
+                font-size: 16px;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -40%);
+                -ms-transform: translate(-50%, -40%);
+                transform: translate(-50%, -40%);
+                text-align: center;
+                line-height: 2.5rem;
+                font-weight: 600;
+
+                i{
+                    font-weight: $light;
+                }
+            }
+       }
+       picture{display:block;}
+       li{
+           &:hover .overlay{
+               opacity: 1;
+           }
+       }
+    }
+}
+.verdePizarron{
+    background-color:$verdePizarron;
+}
+.azulRey{ background-color:$azulRey;}

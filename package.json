@@ -1,0 +1,21 @@
+{
+  "name": "mbga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ameyalli Yanez y Carolina De la O Cordero",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "imagemin": "^8.0.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}

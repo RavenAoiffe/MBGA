@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+    .logo{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        img {
+            max-width: 160px;
+        }
+    }
+    .nav{
+        align-items: center;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        a{ 
+            color:$azulBG;
+            font-weight:$black;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}

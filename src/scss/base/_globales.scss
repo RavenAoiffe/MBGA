@@ -1,0 +1,33 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: $fuente_principal;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+p {
+    color: $negro;
+    font-size: 2rem;
+}
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color:$blanco;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
