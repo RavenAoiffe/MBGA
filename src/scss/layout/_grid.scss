@@ -1,14 +1,15 @@
 .lista-de-proyectos{
     position: absolute;
     right: 10%;
+    margin:10rem 0;
     ul{
         list-style: none;
         column-count: 4;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
+        grid-gap: 5px;
         float:right;
-
+        margin:2.5px 0;
         img {
             width: 20rem;
             height:20rem;

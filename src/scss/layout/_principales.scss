@@ -6,7 +6,7 @@
 .informacion-inicial 
 {
     color:$blanco;
-
+    margin-bottom: 12rem;
     h2 {
     -webkit-text-stroke: .5px $azulBG;
     -webkit-text-stroke-color: $azulBG;
@@ -14,7 +14,7 @@
     word-break: break-word;
     max-width: 40rem;
     line-height: 8rem;
-    text-align: center;
+    text-align: left;
     }
     h3{
 
@@ -22,7 +22,7 @@
     }
     p {
         color: $blanco;
-        line-height: 2rem;
+        line-height: .5rem;
     }
 
     .logo-uam{

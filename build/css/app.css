@@ -65,7 +65,8 @@ nav {
   float: left; }
 
 .informacion-inicial {
-  color: #ffffff; }
+  color: #ffffff;
+  margin-bottom: 12rem; }
   .informacion-inicial h2 {
     -webkit-text-stroke: 0.5px #032638;
     -webkit-text-stroke-color: #032638;
@@ -73,12 +74,12 @@ nav {
     word-break: break-word;
     max-width: 40rem;
     line-height: 8rem;
-    text-align: center; }
+    text-align: left; }
   .informacion-inicial h3 {
     font-size: 3rem; }
   .informacion-inicial p {
     color: #ffffff;
-    line-height: 2rem; }
+    line-height: .5rem; }
   .informacion-inicial .logo-uam {
     max-width: 200px;
     padding: 3rem 0;
@@ -108,14 +109,16 @@ nav {
 
 .lista-de-proyectos {
   position: absolute;
-  right: 10%; }
+  right: 10%;
+  margin: 10rem 0; }
   .lista-de-proyectos ul {
     list-style: none;
     column-count: 4;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    float: right; }
+    grid-gap: 5px;
+    float: right;
+    margin: 2.5px 0; }
     .lista-de-proyectos ul img {
       width: 20rem;
       height: 20rem; }
