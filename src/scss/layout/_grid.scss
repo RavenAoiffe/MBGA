@@ -15,7 +15,7 @@
         }
        .overlay{
             position: absolute;
-            top: 1.5rem;
+            top: 0rem;
             height: 20rem;
             width: 20rem;
             opacity: 0;
@@ -24,11 +24,11 @@
                 color: $blanco;
                 font-size: 16px;
                 position: absolute;
-                top: 40%;
+                top: 50%;
                 left: 50%;
-                -webkit-transform: translate(-50%, -40%);
-                -ms-transform: translate(-50%, -40%);
-                transform: translate(-50%, -40%);
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
                 text-align: center;
                 line-height: 2.5rem;
                 font-weight: 600;
@@ -38,11 +38,29 @@
                 }
             }
        }
-       picture{display:block;}
-       li{
+       a{ 
+        display: block;
+        width: 100%;
+        float: left;
+        position:relative;
            &:hover .overlay{
                opacity: 1;
            }
        }
     }
+}
+.verdePizarron{
+    @include coloBg($verdePizarron)
+}
+
+.azulRey{
+    @include coloBg($azulRey)
+}
+
+.durazno{
+    @include coloBg($durazno)
+}
+
+.rojoLeve{
+    @include coloBg($rojoLeve)
 }

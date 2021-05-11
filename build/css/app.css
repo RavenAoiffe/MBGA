@@ -121,7 +121,7 @@ nav {
       height: 20rem; }
     .lista-de-proyectos ul .overlay {
       position: absolute;
-      top: 1.5rem;
+      top: 0rem;
       height: 20rem;
       width: 20rem;
       opacity: 0;
@@ -130,17 +130,32 @@ nav {
         color: #ffffff;
         font-size: 16px;
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -40%);
-        -ms-transform: translate(-50%, -40%);
-        transform: translate(-50%, -40%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         text-align: center;
         line-height: 2.5rem;
         font-weight: 600; }
         .lista-de-proyectos ul .overlay p i {
           font-weight: 100; }
-    .lista-de-proyectos ul picture {
-      display: block; }
-    .lista-de-proyectos ul li:hover .overlay {
-      opacity: 1; }
+    .lista-de-proyectos ul a {
+      display: block;
+      width: 100%;
+      float: left;
+      position: relative; }
+      .lista-de-proyectos ul a:hover .overlay {
+        opacity: 1; }
+
+.verdePizarron {
+  background-color: #055c4f; }
+
+.azulRey {
+  background-color: #030845; }
+
+.durazno {
+  background-color: #c55428; }
+
+.rojoLeve {
+  background-color: #bd2136; }
