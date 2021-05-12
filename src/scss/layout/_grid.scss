@@ -91,3 +91,15 @@
 .negroBg{
     @include coloBg($negro)
 }
+.guindaBg{
+    @include coloBg($guinda)
+}
+.huesoBg{
+    @include coloBg($hueso)
+}
+.azulGrisOscuroBg{
+    @include coloBg($azulGrisOscuro)
+}
+.grisOxfordBg{
+    @include coloBg($grisOxford)
+}
