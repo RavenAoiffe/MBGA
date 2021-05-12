@@ -123,7 +123,9 @@ nav {
     margin: 2.5px 0; }
     .lista-de-proyectos ul img {
       width: 20rem;
-      height: 20rem; }
+      height: 20rem;
+      object-fit: cover;
+      object-position: center center; }
     .lista-de-proyectos ul .overlay {
       position: absolute;
       top: 0rem;
