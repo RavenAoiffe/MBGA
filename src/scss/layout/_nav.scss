@@ -1,10 +1,18 @@
 nav {
     display: flex;
+
+    @include tablet{
+        flex-direction: column;
+    }
     .logo{
         display: flex;
         flex-direction: column;
         width: 50%;
         align-items: center;
+
+        @include tablet{
+            width:100%;
+        }
         img {
             max-width: 160px;
         }
@@ -14,11 +22,20 @@ nav {
         width: 50%;
         display: flex;
         justify-content: space-evenly;
+
+        @include desktop{
+            flex-direction: column;
+            width:100%;
+        }
         a{ 
             color:$azulBG;
             font-weight:$black;
             font-size: 2rem;
             text-transform: uppercase;
+
+            @include desktop{
+                color:$hueso;
+            }
         }
     }
 }

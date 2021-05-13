@@ -1,3 +1,20 @@
 @mixin coloBg($colorBg){
     background-color:$colorBg ;
 }
+
+@mixin telefono{
+    @media (min-width: $telefono) {
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (max-width: $desktop) {
+        @content;
+    }
+}

@@ -1,16 +1,28 @@
 .informacion,.lista-de-proyectos{
     width: 50%;
     float:left;
+    @include tablet{
+        width:100%;
+        position:relative!important;
+    }
 }
 .info-index{
     p{
         line-height: .5rem;
+        @include tablet{
+        line-height: 2rem;
+        }
     }
+   
 }
 .informacion-inicial 
 {
     color:$blanco;
     margin-bottom: 12rem;
+
+    @include tablet{
+        margin-bottom: 4rem;
+    }
     h2 {
     -webkit-text-stroke: .5px $azulBG;
     -webkit-text-stroke-color: $azulBG;
@@ -19,6 +31,10 @@
     max-width: 40rem;
     line-height: 8rem;
     text-align: left;
+        @include tablet{
+            font-size: 5rem;
+            text-align: center;
+        }
     }
     h3{
 
@@ -32,6 +48,9 @@
         max-width: 200px;
         padding: 3rem 0;
         filter: brightness(10);
+        @include tablet{
+            max-width: 150px;
+         }
     }
 }
 .botones_cv{
