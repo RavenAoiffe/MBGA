@@ -1,7 +1,7 @@
 .informacion,.lista-de-proyectos{
     width: 50%;
     float:left;
-    @include tablet{
+    @include desktop{
         width:100%;
         position:relative!important;
     }
