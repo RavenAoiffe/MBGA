@@ -9,7 +9,7 @@ function css(){
     .pipe( dest('./build/css')) 
 }
 function imagenes(){
-    return src('src/img/*')
+    return src('src/img/**/*')
     .pipe(cache(imagemin({optimizationLevel: 3})))
     .pipe(dest('build/img'))
 }

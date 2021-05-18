@@ -9,21 +9,20 @@ body {
     font-family: $fuente_principal;
     font-size: 1.6rem;
     line-height: 1.8;
+    margin:0;
 }
 p {
-    color: $negro;
-    font-size: 2rem;
+    padding: 0;
+    margin:0;
 }
 .contenedor {
-    width: 90%;
+    width: 80%;
     max-width: 120rem;
     margin: 0 auto;
-    padding: 5rem 0;
 }
 
 a {
     text-decoration: none;
-    color:$blanco;
 }
 
 img,

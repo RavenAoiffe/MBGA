@@ -1,41 +1,101 @@
 nav {
+    .logo-nombre{
+        display: flex;
+        h2{
+            font-family: $fuente_apoyo;
+            max-width: 10rem;
+        }
+    }
+}
+.navegador{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.diagonal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
-    @include tablet{
+.enlaces {
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    a{
+    text-transform: uppercase;
+    font-weight: $bold;
+    color:$azulBG;
+    }
+}
+@include desktop-large{
+    h2{color:$blanco;
+        font-size: 7rem;
+        text-align: right;
+        line-height: 7rem;
+    }
+    .logo-nombre{
         flex-direction: column;
     }
-    .logo{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        align-items: center;
-
-        @include tablet{
-            width:100%;
-        }
-        img {
-            max-width: 160px;
+    .logo-nombre{
+        img{
+            width: 6rem;
+            margin: 1rem 12rem;
         }
     }
-    .nav{
-        align-items: center;
-        width: 50%;
+    .enlaces {
         display: flex;
-        justify-content: space-evenly;
+    }  
+}
 
-        @include desktop{
-            flex-direction: column;
-            width:100%;
+@include desktop{
+    .diagonal{ display:none;}
+    h2{color:$azulBG;
+            font-size: 2.5rem;
+            line-height: 4rem;
         }
-        a{ 
-            color:$azulBG;
-            font-weight:$black;
-            font-size: 2rem;
-            text-transform: uppercase;
+    .logo-nombre{
+        gap:1.5rem;
+        flex-direction: row;
+        img{
+            width: 6rem;
+        }
+    }
 
-            @include desktop{
-                color:$hueso;
+    .enlaces {
+        display: none;
+    }
+    .menu-movil{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span{
+            height: .7rem;
+            margin: .5rem 0;
+            &:nth-child(2n+1){
+                background: $azulBG;  
+                width: 5rem;
             }
+            &:nth-child(2){
+                background: $naranjaPrincipal;  
+                width: 4rem;
+            } 
         }
+    }
+
+    .footer{
+        background-color: $azulBG;
+        width: 100%;
+        padding: 4rem 9rem;
+        p,a{
+            color: $blanco!important;;
+        }
+    }
+}
+@include tablet{
+    .footer{
+        padding: 4rem;
     }
 }

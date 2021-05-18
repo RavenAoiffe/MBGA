@@ -2,8 +2,7 @@
 @import "base/var";
 @import "base/mixins";
 /****layout******/ 
+@import "base/utilidades";
 @import "base/globales";
-@import "layout/background";
 @import "layout/nav";
-@import "layout/principales";
-@import "layout/grid";
+@import "layout/index";

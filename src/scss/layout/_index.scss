@@ -1,0 +1,56 @@
+.textos-interiores{
+    p{
+        max-width: 42rem;
+    }
+    h3 {
+        color:$blanco;
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+}
+.enlaces-curriculums{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    a{
+        color: #fff;
+        font-size: 2rem;
+        max-width: 11rem;
+        text-align: center;
+        padding: 3rem 0;
+        line-height: 18px;
+        &strong{font-weight:$black ;}
+        &.resumen{
+            background-color:$moradoPrincipal;
+        }
+        &.extendido{
+            background-color:$rojoFuerte;
+        }
+    }
+}
+.linea{
+    margin-top:5rem;
+}
+.textos-interiores img {
+    max-width: 20rem;
+}
+@include desktop-large{
+    
+    .textos-interiores{
+        p,a{
+           color:$blanco;
+        }
+    }
+    .textos-interiores img {
+        margin-left: 5rem;
+        padding: 2rem;
+    }
+}
+@include desktop{
+    .textos-interiores{
+        p,a{
+           color:$negro;
+        }
+    }
+}
