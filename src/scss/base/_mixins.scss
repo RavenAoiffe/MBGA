@@ -24,3 +24,12 @@
         @content;
     }
 }
+
+@mixin grid($display,$columnas,$separacionL,$separacionA){
+    display:$display;
+    grid-template-columns: repeat($columnas, 1fr);
+    grid-gap: $separacionL;
+    grid-row-gap:$separacionA;
+    margin:10px 0;
+    padding:0;
+}

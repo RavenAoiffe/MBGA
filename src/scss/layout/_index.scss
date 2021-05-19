@@ -1,7 +1,13 @@
-.textos-interiores{
-    p{
-        max-width: 42rem;
+.columnas{
+    @include desktop-large{
+        @include grid(block,2,10px,10px)
     }
+    @include tablet{
+        @include grid(block,1,10px,10px)
+    }
+   
+}
+.textos-interiores{
     h3 {
         color:$blanco;
         font-size: 28px;
@@ -33,13 +39,14 @@
     margin-top:5rem;
 }
 .textos-interiores img {
-    max-width: 20rem;
+    max-width: 12rem;
 }
 @include desktop-large{
     
     .textos-interiores{
         p,a{
            color:$blanco;
+           line-height: 2rem;
         }
     }
     .textos-interiores img {

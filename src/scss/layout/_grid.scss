@@ -1,0 +1,29 @@
+.grid{
+    ul{
+        list-style: none;
+        @include desktop{
+            @include grid(inline-grid,2,1px,.5px);
+        }
+        @include desktop-large{
+            margin-top:4rem;
+            @include grid(inline-grid,4,1px,.5px);
+        }
+
+        li{
+            img{
+        
+                @include desktop-large{
+                   width: 21rem;
+                   height: 22rem;
+                }  
+            }
+        }
+    }
+    @include desktop-large{
+        list-style: none;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        max-width: 768px;
+    }
+}
