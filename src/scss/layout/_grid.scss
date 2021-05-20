@@ -1,21 +1,43 @@
-.grid{
-    ul{
-        list-style: none;
-        @include desktop{
-            @include grid(inline-grid,2,1px,.5px);
+@include tablet{
+    .grid{
+        ul{
+             @include grid(inline-grid,2,1px,.5px);
         }
-        @include desktop-large{
+    }
+ }
+
+@include tabletYdesktop{
+   .grid{
+       ul{
+            @include grid(inline-grid,3,1px,.5px);
+       }
+   }
+}
+
+@include desktop-large{
+    .grid{
+        ul{
             margin-top:4rem;
             @include grid(inline-grid,4,1px,.5px);
         }
+    }
+  
+}
 
+.grid{
+    ul{
+        list-style: none;
         li{
+            position:relative;
             img{
         
                 @include desktop-large{
                    width: 21rem;
                    height: 22rem;
                 }  
+            }
+            &:hover .overlay{
+                display: block;
             }
         }
     }
@@ -26,4 +48,23 @@
         right: 10%;
         max-width: 768px;
     }
+}
+.overlay{
+    display:none;
+    p{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        font-weight: $bold;
+    }
+}
+.overlayMorado{
+    @include OverlayBackgroundColor($morado);
+}
+.overlayAzulRey{
+    @include OverlayBackgroundColor($azulRey);
+}
+.overlayNaranja{
+    @include OverlayBackgroundColor($durazno);
 }
