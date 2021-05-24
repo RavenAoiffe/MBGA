@@ -3,12 +3,12 @@
 }
 
 @mixin telefono{
-    @media (min-width: $telefono) {
+    @media (min-width: $telefono) and (max-width:$tablet){
         @content;
     }
 }
 @mixin tablet{
-    @media (max-width: $tablet) {
+    @media (max-width: $tablet) and (max-width: $desktop)  {
         @content;
     }
 }

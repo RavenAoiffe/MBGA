@@ -1,42 +1,105 @@
-nav {
-    .logo-nombre{
+@media (min-width:0) {
+    .columnas{
+            @include grid(block,1,10px,10px)
+    }
+    nav {
+        .logo-nombre{
+            display: flex;
+            h2{
+                font-family: $fuente_apoyo;
+                max-width: 10rem;
+            }
+        }
+    }
+    .navegador{
         display: flex;
-        h2{
-            font-family: $fuente_apoyo;
-            max-width: 10rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .enlaces {
+        display: none;
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        a{
+        text-transform: uppercase;
+        font-weight: $bold;
+        color:$azulBG;
+        }
+    }
+    .menu-movil{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span{
+            height: .7rem;
+            margin: .5rem 0;
+            &:nth-child(2n+1){
+                background: $azulBG;  
+                width: 5rem;
+            }
+            &:nth-child(2){
+                background: $naranjaPrincipal;  
+                width: 4rem;
+            } 
+        }
+    }
+    .logo-nombre{
+        gap:1.5rem;
+        flex-direction: row;
+        img{
+            width: 6rem;
+        }
+    }
+       
+.footer{
+    background-color: $azulBG;
+    width: 100%;
+    padding: 4rem 9rem;
+    p,a{
+        color: $blanco!important;;
+    }
+}
+}
+
+@media (min-width:480px) {
+    .footer{
+        padding: 4rem;
+    }
+    .textos-interiores{
+        p,a{
+           color:$blanco;
+           line-height: 2rem;
         }
     }
 }
-.navegador{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.diagonal{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
-    height:160%;
-    background-image: url('../img/diagonal.svg');
-    background-size: cover;
-    width: 100%;
+
+@media (min-width:768px) {
+    
+    h2{color:$blanco;
+    }
+    .columnas{
+            @include grid(block,2,10px,10px)
+        }
 }
 
-.enlaces {
-    width: 50%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    a{
-    text-transform: uppercase;
-    font-weight: $bold;
-    color:$azulBG;
+@media (min-width:1100px) {
+    .footer{
+        width: 100%;
+        padding: 4rem 9rem;
+        p,a{
+            color: $blanco!important;;
+        }
     }
-}
-@include desktop-large{
-    h2{color:$blanco;
+    .menu-movil{
+        display: none;
+    }
+    .enlaces {
+        display: flex;
+    }
+    h2{
         font-size: 7rem;
         text-align: right;
         line-height: 7rem;
@@ -56,52 +119,9 @@ nav {
     }  
 }
 
-@include desktop{
-    .diagonal{ display:none;}
-    h2{color:$azulBG;
-            font-size: 2.5rem;
-            line-height: 4rem;
-        }
-    .logo-nombre{
-        gap:1.5rem;
-        flex-direction: row;
-        img{
-            width: 6rem;
-        }
-    }
 
-    .enlaces {
-        display: none;
-    }
-    .menu-movil{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        span{
-            height: .7rem;
-            margin: .5rem 0;
-            &:nth-child(2n+1){
-                background: $azulBG;  
-                width: 5rem;
-            }
-            &:nth-child(2){
-                background: $naranjaPrincipal;  
-                width: 4rem;
-            } 
-        }
-    }
-
+@media (min-width:1100px) {
     .footer{
-        background-color: $azulBG;
-        width: 100%;
-        padding: 4rem 9rem;
-        p,a{
-            color: $blanco!important;;
-        }
-    }
-}
-@include tablet{
-    .footer{
-        padding: 4rem;
+        background-color: transparent;
     }
 }

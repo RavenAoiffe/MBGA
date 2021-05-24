@@ -1,12 +1,3 @@
-.columnas{
-    @include desktop-large{
-        @include grid(block,2,10px,10px)
-    }
-    @include tablet{
-        @include grid(block,1,10px,10px)
-    }
-   
-}
 .textos-interiores{
     h3 {
         color:$blanco;
@@ -42,23 +33,43 @@
 .textos-interiores img {
     max-width: 12rem;
 }
+.diagonal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    height:180%;
+    background-image: url('../img/diagonal.svg');
+    background-size: cover;
+    width: 100%;
+}
 @include desktop-large{
     
-    .textos-interiores{
-        p,a{
-           color:$blanco;
-           line-height: 2rem;
-        }
-    }
+
     .textos-interiores img {
         margin-left: 5rem;
         padding: 2rem;
     }
 }
 @include desktop{
+}
+
+@include tablet{
+    .textos-interiores{
+        p,a{
+           color:$blanco;
+           line-height: 2rem;
+        }
+    }
+
+}
+
+@include telefono{
     .textos-interiores{
         p,a{
            color:$negro;
         }
     }
+    .diagonal{ display:none;}
 }

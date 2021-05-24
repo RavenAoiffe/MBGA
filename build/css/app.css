@@ -37,67 +37,32 @@ picture {
   width: 100%;
   display: block; }
 
-nav .logo-nombre {
-  display: flex; }
-  nav .logo-nombre h2 {
-    font-family: "Inter", sans-serif;
-    max-width: 10rem; }
-
-.navegador {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.diagonal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  object-fit: cover;
-  height: 160%;
-  background-image: url("../img/diagonal.svg");
-  background-size: cover;
-  width: 100%; }
-
-.enlaces {
-  width: 50%;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
-  .enlaces a {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #032638; }
-
-@media (min-width: 1200px) {
-  h2 {
-    color: #ffffff;
-    font-size: 7rem;
-    text-align: right;
-    line-height: 7rem; }
-  .logo-nombre {
-    flex-direction: column; }
-  .logo-nombre img {
-    width: 6rem;
-    margin: 1rem 12rem; }
-  .enlaces {
+@media (min-width: 0) {
+  .columnas {
+    display: block;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 0; }
+  nav .logo-nombre {
+    display: flex; }
+    nav .logo-nombre h2 {
+      font-family: "Inter", sans-serif;
+      max-width: 10rem; }
+  .navegador {
     display: flex;
-    max-height: 10rem; } }
-
-@media (max-width: 1200px) {
-  .diagonal {
-    display: none; }
-  h2 {
-    color: #032638;
-    font-size: 2.5rem;
-    line-height: 4rem; }
-  .logo-nombre {
-    gap: 1.5rem;
-    flex-direction: row; }
-    .logo-nombre img {
-      width: 6rem; }
+    flex-direction: row;
+    justify-content: space-between; }
   .enlaces {
-    display: none; }
+    display: none;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .enlaces a {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #032638; }
   .menu-movil {
     display: flex;
     flex-direction: column;
@@ -111,6 +76,11 @@ nav .logo-nombre {
       .menu-movil span:nth-child(2) {
         background: #F27B1C;
         width: 4rem; }
+  .logo-nombre {
+    gap: 1.5rem;
+    flex-direction: row; }
+    .logo-nombre img {
+      width: 6rem; }
   .footer {
     background-color: #032638;
     width: 100%;
@@ -118,11 +88,16 @@ nav .logo-nombre {
     .footer p, .footer a {
       color: #ffffff !important; } }
 
-@media (max-width: 768px) {
+@media (min-width: 480px) {
   .footer {
-    padding: 4rem; } }
+    padding: 4rem; }
+  .textos-interiores p, .textos-interiores a {
+    color: #ffffff;
+    line-height: 2rem; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+  h2 {
+    color: #ffffff; }
   .columnas {
     display: block;
     grid-template-columns: repeat(2, 1fr);
@@ -130,13 +105,32 @@ nav .logo-nombre {
     grid-row-gap: 10px;
     padding: 0; } }
 
-@media (max-width: 768px) {
-  .columnas {
-    display: block;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    grid-row-gap: 10px;
-    padding: 0; } }
+@media (min-width: 1100px) {
+  .footer {
+    width: 100%;
+    padding: 4rem 9rem; }
+    .footer p, .footer a {
+      color: #ffffff !important; }
+  .menu-movil {
+    display: none; }
+  .enlaces {
+    display: flex; }
+  h2 {
+    font-size: 7rem;
+    text-align: right;
+    line-height: 7rem; }
+  .logo-nombre {
+    flex-direction: column; }
+  .logo-nombre img {
+    width: 6rem;
+    margin: 1rem 12rem; }
+  .enlaces {
+    display: flex;
+    max-height: 10rem; } }
+
+@media (min-width: 1100px) {
+  .footer {
+    background-color: transparent; } }
 
 .textos-interiores h3 {
   color: #ffffff;
@@ -169,19 +163,34 @@ nav .logo-nombre {
 .textos-interiores img {
   max-width: 12rem; }
 
+.diagonal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 180%;
+  background-image: url("../img/diagonal.svg");
+  background-size: cover;
+  width: 100%; }
+
 @media (min-width: 1200px) {
-  .textos-interiores p, .textos-interiores a {
-    color: #ffffff;
-    line-height: 2rem; }
   .textos-interiores img {
     margin-left: 5rem;
     padding: 2rem; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) and (max-width: 1200px) {
   .textos-interiores p, .textos-interiores a {
-    color: #000000; } }
+    color: #ffffff;
+    line-height: 2rem; } }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
+  .textos-interiores p, .textos-interiores a {
+    color: #000000; }
+  .diagonal {
+    display: none; } }
+
+@media (max-width: 768px) and (max-width: 1200px) {
   .grid ul {
     display: inline-grid;
     grid-template-columns: repeat(2, 1fr);
