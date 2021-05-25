@@ -3,30 +3,30 @@
 }
 
 @mixin telefono{
-    @media (min-width: $telefono) and (max-width:$tablet){
+    @media (min-width:0){ 
         @content;
     }
 }
+@mixin telefono_largo{
+    @media (min-width:$telefono) {
+        @content;
+    }
+}
+
 @mixin tablet{
-    @media (max-width: $tablet) and (max-width: $desktop)  {
+    @media (min-width:$tablet) {
         @content;
     }
 }
 
 @mixin desktop{
-    @media (max-width: $desktop) {
-        @content;
-    }
-}
-
-@mixin tabletYdesktop{
-    @media (min-width:$tablet) and (max-width: $desktop) {
+    @media (min-width:$desktop) {
         @content;
     }
 }
 
 @mixin desktop-large{
-    @media (min-width: $desktop-large) {
+    @media (min-width:$desktop-large){
         @content;
     }
 }

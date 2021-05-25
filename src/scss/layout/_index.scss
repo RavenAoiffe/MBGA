@@ -33,7 +33,10 @@
 .textos-interiores img {
     max-width: 12rem;
 }
-.diagonal{
+
+@include desktop{
+    .diagonal{
+        visibility:1;
     position: absolute;
     top: 0;
     left: 0;
@@ -44,9 +47,8 @@
     background-size: cover;
     width: 100%;
 }
+}
 @include desktop-large{
-    
-
     .textos-interiores img {
         margin-left: 5rem;
         padding: 2rem;
@@ -71,5 +73,5 @@
            color:$negro;
         }
     }
-    .diagonal{ display:none;}
+    .diagonal{ visibility:0;}
 }

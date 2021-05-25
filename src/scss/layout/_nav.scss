@@ -1,6 +1,7 @@
 @media (min-width:0) {
     .columnas{
-            @include grid(block,1,10px,10px)
+           display: flex;
+           flex-direction: column;
     }
     nav {
         .logo-nombre{
@@ -53,21 +54,9 @@
             width: 6rem;
         }
     }
-       
-.footer{
-    background-color: $azulBG;
-    width: 100%;
-    padding: 4rem 9rem;
-    p,a{
-        color: $blanco!important;;
-    }
-}
 }
 
 @media (min-width:480px) {
-    .footer{
-        padding: 4rem;
-    }
     .textos-interiores{
         p,a{
            color:$blanco;
@@ -77,22 +66,17 @@
 }
 
 @media (min-width:768px) {
-    
+    .columnas{
+        flex-direction: row;
+    }
     h2{color:$blanco;
     }
     .columnas{
-            @include grid(block,2,10px,10px)
+            @include grid(grid,2,10px,10px)
         }
 }
 
 @media (min-width:1100px) {
-    .footer{
-        width: 100%;
-        padding: 4rem 9rem;
-        p,a{
-            color: $blanco!important;;
-        }
-    }
     .menu-movil{
         display: none;
     }
@@ -117,11 +101,4 @@
         display: flex;
         max-height: 10rem;
     }  
-}
-
-
-@media (min-width:1100px) {
-    .footer{
-        background-color: transparent;
-    }
 }

@@ -1,70 +1,72 @@
-@include tablet{
+@include telefono{
+
+    .grid{
+    
+        ul{
+            @include grid(inline-grid,2,1px,.5px);
+            margin:0;
+            list-style: none;
+            li{
+                position:relative;
+                &:hover .overlay{
+                    display: block;
+                }
+            }
+        }
+    }
+    .overlay{
+        display:none;
+        p{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            font-weight: $bold;
+        }
+    }
+    .overlayMorado{
+        @include OverlayBackgroundColor($morado);
+    }
+    .overlayAzulRey{
+        @include OverlayBackgroundColor($azulRey);
+    }
+    .overlayNaranja{
+        @include OverlayBackgroundColor($durazno);
+    }
+}
+
+
+@include telefono_largo{
     .grid{
         ul{
-             @include grid(inline-grid,2,1px,.5px);
+            float:right;
+             img{
+                width: 13rem;
+                height: 13rem;
+            }
         }
     }
  }
 
-@include tabletYdesktop{
+@include tablet{
    .grid{
        ul{
             @include grid(inline-grid,3,1px,.5px);
+            grid-template-columns: repeat(3, 0fr);
+            img{
+                width: 18rem;
+                height: 18rem;
+            }
        }
    }
 }
 
 @include desktop-large{
-    .grid{
+    .grid{ 
         ul{
-            margin-top:4rem;
             @include grid(inline-grid,4,1px,.5px);
+
         }
     }
   
-}
-
-.grid{
-    ul{
-        list-style: none;
-        li{
-            position:relative;
-            img{
-        
-                @include desktop-large{
-                   width: 21rem;
-                   height: 22rem;
-                }  
-            }
-            &:hover .overlay{
-                display: block;
-            }
-        }
-    }
-    @include desktop-large{
-        list-style: none;
-        position: absolute;
-        top: 25%;
-        right: 10%;
-        max-width: 768px;
-    }
-}
-.overlay{
-    display:none;
-    p{
-        top: 50%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        font-weight: $bold;
-    }
-}
-.overlayMorado{
-    @include OverlayBackgroundColor($morado);
-}
-.overlayAzulRey{
-    @include OverlayBackgroundColor($azulRey);
-}
-.overlayNaranja{
-    @include OverlayBackgroundColor($durazno);
 }
