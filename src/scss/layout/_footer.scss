@@ -17,19 +17,43 @@
     background-color: $azulBG;
     margin-top: 4rem;
     padding:4rem 0;
-    p,a{
-        color: $blanco;
+    h3{
+        color:$blanco;
     }
 }
-@media (min-width:480px) {
- 
+@include telefono{
+    .footer-movil{
+        p,a{
+            color: $blanco;
+        }
+    }
 }
+@include desktop{}
 @media (min-width:768px) {
     .footer-movil{
         display: none;
     }
 }
 
-@media (min-width:1200px) {
-
+@include tablet{
+    .display-tablet{
+        display: block;
+        background: #032638;
+        position: absolute;
+        bottom: 0;
+        top: 100%;
+        left: 0;
+        height: 100%;
+        width:120%;
+        h3{
+            color:$blanco;
+        }
+    }
+}
+@include desktop{
+    .display-tablet{
+        background: transparent;
+        height: auto;
+        width: 100%;
+    }
 }

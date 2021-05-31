@@ -1,6 +1,5 @@
 .textos-interiores{
     h3 {
-        color:$blanco;
         font-size: 28px;
         font-weight: 800;
         text-transform: uppercase;
@@ -18,7 +17,7 @@
         text-align: center;
         padding: 3rem 0;
         line-height: 18px;
-        &strong{font-weight:$black ;}
+        &strong{font-weight:$black;}
         &.resumen{
             background-color:$moradoPrincipal;
         }
@@ -42,11 +41,11 @@
     left: 0;
     z-index: -1;
     object-fit: cover;
-    height:180%;
+    height:200%;
     background-image: url('../img/diagonal.svg');
     background-size: cover;
     width: 100%;
-}
+    }
 }
 @include desktop-large{
     .textos-interiores img {
@@ -55,12 +54,9 @@
     }
 }
 @include desktop{
-}
-
-@include tablet{
     .textos-interiores{
         p,a{
-           color:$blanco;
+           color:$blanco!important;
            line-height: 2rem;
         }
     }

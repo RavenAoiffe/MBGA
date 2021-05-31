@@ -69,11 +69,13 @@
     .columnas{
         flex-direction: row;
     }
-    h2{color:$blanco;
-    }
     .columnas{
             @include grid(grid,2,10px,10px)
         }
+}
+@media (min-width:920px) {
+    h2{color:$blanco;
+    }
 }
 
 @media (min-width:1100px) {
