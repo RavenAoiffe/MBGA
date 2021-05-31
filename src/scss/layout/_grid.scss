@@ -7,6 +7,8 @@
             margin:0;
             list-style: none;
             li{
+                font-size: 1.5rem;
+                text-align: center;
                 position:relative;
                 &:hover .overlay{
                     display: block;
@@ -24,14 +26,56 @@
             font-weight: $bold;
         }
     }
+    .overlayverdePizarron{
+        @include OverlayBackgroundColor($verdePizarron);
+    }
     .overlayMorado{
         @include OverlayBackgroundColor($morado);
     }
     .overlayAzulRey{
         @include OverlayBackgroundColor($azulRey);
     }
-    .overlayNaranja{
+    .overlayDurazno{
         @include OverlayBackgroundColor($durazno);
+    }
+    .overlayRojo{
+        @include OverlayBackgroundColor($rojoLeve); 
+    }
+    .overlayVino{
+        @include OverlayBackgroundColor($vino); 
+    }
+    .overlayMoradoFuerte{
+        @include OverlayBackgroundColor($moradoFuerte); 
+    }
+    .overlayNaranja{
+        @include OverlayBackgroundColor($naranja); 
+    }
+    .overlayAzul{
+        @include OverlayBackgroundColor($azul); 
+    }
+    .overlayverde{
+        @include OverlayBackgroundColor($verde); 
+    }
+    .overlayCarne{
+        @include OverlayBackgroundColor($carne); 
+    }
+    .overlayGrisAzul{
+        @include OverlayBackgroundColor($grisAzul); 
+    }
+    .overlayNegro{
+        @include OverlayBackgroundColor($negro); 
+    }
+    .overlayGuinda{
+        @include OverlayBackgroundColor($guinda); 
+    }
+    .overlayHueso{
+        @include OverlayBackgroundColor($hueso); 
+    }
+    .overlayazulGrisOscuro{
+        @include OverlayBackgroundColor($azulGrisOscuro); 
+    }
+    .overlaygrisOxford{
+        @include OverlayBackgroundColor($grisOxford); 
     }
 }
 
@@ -67,7 +111,10 @@
     .grid{ 
         ul{
             @include grid(inline-grid,4,1px,.5px);
-
+            img{
+                width: 18rem;
+                height: 18rem;
+            }
         }
     }
   

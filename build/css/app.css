@@ -166,7 +166,7 @@ picture {
     left: 0;
     z-index: -1;
     object-fit: cover;
-    height: 170%;
+    height: 190%;
     background-image: url("../img/diagonal.svg");
     background-size: cover;
     width: 100%; } }
@@ -192,6 +192,8 @@ picture {
     margin: 0;
     list-style: none; }
     .grid ul li {
+      font-size: 1.5rem;
+      text-align: center;
       position: relative; }
       .grid ul li:hover .overlay {
         display: block; }
@@ -203,6 +205,13 @@ picture {
       position: absolute;
       transform: translate(-50%, -50%);
       font-weight: 600; }
+  .overlayverdePizarron {
+    background-color: #055c4f;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
   .overlayMorado {
     background-color: #a38cb5;
     color: #ffffff;
@@ -217,8 +226,99 @@ picture {
     top: 0;
     width: 100%;
     height: 100%; }
-  .overlayNaranja {
+  .overlayDurazno {
     background-color: #c55428;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayRojo {
+    background-color: #bd2136;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayVino {
+    background-color: #781221;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayMoradoFuerte {
+    background-color: #21214a;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayNaranja {
+    background-color: #fa421c;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayAzul {
+    background-color: #2b4d70;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayverde {
+    background-color: #294030;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayCarne {
+    background-color: #cc996b;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayGrisAzul {
+    background-color: #808c80;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayNegro {
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayGuinda {
+    background-color: #6e3b45;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayHueso {
+    background-color: #d9bf8f;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlayazulGrisOscuro {
+    background-color: #293b3b;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .overlaygrisOxford {
+    background-color: #4d4d4d;
     color: #ffffff;
     position: absolute;
     top: 0;
@@ -256,7 +356,10 @@ picture {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1px;
     grid-row-gap: 0.5px;
-    padding: 0; } }
+    padding: 0; }
+    .grid ul img {
+      width: 18rem;
+      height: 18rem; } }
 
 .footer {
   width: 100%;
