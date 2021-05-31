@@ -39,7 +39,8 @@
 @include telefono_largo{
     .grid{
         ul{
-            float:right;
+            @include grid(inline-grid,3,1px,.5px);
+            float:left;
              img{
                 width: 13rem;
                 height: 13rem;
@@ -51,11 +52,12 @@
 @include tablet{
    .grid{
        ul{
+           float: right;
             @include grid(inline-grid,3,1px,.5px);
             grid-template-columns: repeat(3, 0fr);
             img{
-                width: 18rem;
-                height: 18rem;
+                width: 16rem;
+                height: 16rem;
             }
        }
    }

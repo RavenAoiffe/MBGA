@@ -4,7 +4,8 @@
 /*******mixins********/
 /****layout******/
 .size-14 {
-  font-size: 14px; }
+  font-size: 1.4rem !important;
+  line-height: 1.7rem !important; }
 
 @media (min-width: 0) {
   .display-tablet {
@@ -98,7 +99,7 @@ picture {
   .columnas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 4rem;
     grid-row-gap: 10px;
     padding: 0; } }
 
@@ -112,7 +113,7 @@ picture {
   .enlaces {
     display: flex; }
   h2 {
-    font-size: 7rem;
+    font-size: 8rem;
     text-align: right;
     line-height: 7rem; }
   .logo-nombre {
@@ -128,6 +129,9 @@ picture {
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase; }
+
+.textos-interiores p {
+  font-size: 1.8rem; }
 
 .enlaces-curriculums {
   display: flex;
@@ -162,20 +166,15 @@ picture {
     left: 0;
     z-index: -1;
     object-fit: cover;
-    height: 200%;
+    height: 170%;
     background-image: url("../img/diagonal.svg");
     background-size: cover;
     width: 100%; } }
 
-@media (min-width: 1200px) {
-  .textos-interiores img {
-    margin-left: 5rem;
-    padding: 2rem; } }
-
 @media (min-width: 920px) {
   .textos-interiores p, .textos-interiores a {
     color: #ffffff !important;
-    line-height: 2rem; } }
+    line-height: 2.2rem; } }
 
 @media (min-width: 0) {
   .textos-interiores p, .textos-interiores a {
@@ -228,13 +227,19 @@ picture {
 
 @media (min-width: 480px) {
   .grid ul {
-    float: right; }
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    grid-row-gap: 0.5px;
+    padding: 0;
+    float: left; }
     .grid ul img {
       width: 13rem;
       height: 13rem; } }
 
 @media (min-width: 768px) {
   .grid ul {
+    float: right;
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1px;
@@ -242,8 +247,8 @@ picture {
     padding: 0;
     grid-template-columns: repeat(3, 0fr); }
     .grid ul img {
-      width: 18rem;
-      height: 18rem; } }
+      width: 16rem;
+      height: 16rem; } }
 
 @media (min-width: 1200px) {
   .grid ul {
@@ -278,22 +283,23 @@ picture {
 
 @media (min-width: 768px) {
   .footer-movil {
-    display: none; } }
+    display: none; }
+  .footer a, .footer p {
+    color: #032638; }
+  .footer img {
+    filter: brightness(0); } }
 
 @media (min-width: 768px) {
   .display-tablet {
     display: block;
-    background: #032638;
-    position: absolute;
-    bottom: 0;
-    top: 100%;
-    left: 0;
     height: 100%;
-    width: 120%; }
-    .display-tablet h3 {
-      color: #ffffff; } }
+    width: 120%; } }
 
 @media (min-width: 920px) {
+  .footer img {
+    filter: brightness(1); }
+  .footer h3 {
+    color: #ffffff; }
   .display-tablet {
     background: transparent;
     height: auto;

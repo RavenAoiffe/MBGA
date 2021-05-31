@@ -28,29 +28,37 @@
         }
     }
 }
-@include desktop{}
 @media (min-width:768px) {
     .footer-movil{
         display: none;
+    }
+    .footer{
+        a,p{
+            color:$azulBG;
+        }
+        img {
+            filter: brightness(0);
+        }
     }
 }
 
 @include tablet{
     .display-tablet{
         display: block;
-        background: #032638;
-        position: absolute;
-        bottom: 0;
-        top: 100%;
-        left: 0;
+
         height: 100%;
         width:120%;
-        h3{
-            color:$blanco;
-        }
     }
 }
 @include desktop{
+    .footer{
+        img {
+            filter: brightness(1);
+        }
+       h3{
+            color:$blanco;
+        }
+    }
     .display-tablet{
         background: transparent;
         height: auto;

@@ -4,6 +4,9 @@
         font-weight: 800;
         text-transform: uppercase;
     }
+    p{
+        font-size: 1.8rem;
+    }
 }
 .enlaces-curriculums{
     display: flex;
@@ -41,23 +44,18 @@
     left: 0;
     z-index: -1;
     object-fit: cover;
-    height:200%;
+    height:170%;
     background-image: url('../img/diagonal.svg');
     background-size: cover;
     width: 100%;
     }
 }
-@include desktop-large{
-    .textos-interiores img {
-        margin-left: 5rem;
-        padding: 2rem;
-    }
-}
+
 @include desktop{
     .textos-interiores{
         p,a{
            color:$blanco!important;
-           line-height: 2rem;
+           line-height: 2.2rem;
         }
     }
 
