@@ -31,9 +31,9 @@
     }
 }
 
-@mixin grid($display,$columnas,$separacionL,$separacionA){
+@mixin grid($display,$columnas,$separacionL,$separacionA,$fr){
     display:$display;
-    grid-template-columns: repeat($columnas, 1fr);
+    grid-template-columns: repeat($columnas, $fr);
     grid-gap: $separacionL;
     grid-row-gap:$separacionA;
     padding:0;

@@ -27,7 +27,7 @@
         a{
         text-transform: uppercase;
         font-weight: $bold;
-        color:$azulBG;
+        text-shadow: 0px 3px 10px #fff;
         }
     }
     .menu-movil{
@@ -48,7 +48,7 @@
         }
     }
     .logo-nombre{
-        gap:1.5rem;
+        gap:.5rem;
         flex-direction: row;
         img{
             width: 6rem;
@@ -70,7 +70,7 @@
         flex-direction: row;
     }
     .columnas{
-            @include grid(grid,2,4rem,10px)
+            @include grid(grid,2,4rem,10px,1fr)
         }
 }
 @media (min-width:920px) {
@@ -102,5 +102,8 @@
     .enlaces {
         display: flex;
         max-height: 10rem;
+        a{
+            color:$azulBG;
+        }
     }  
 }

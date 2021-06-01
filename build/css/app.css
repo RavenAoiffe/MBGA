@@ -68,7 +68,7 @@ picture {
     .enlaces a {
       text-transform: uppercase;
       font-weight: 600;
-      color: #032638; }
+      text-shadow: 0px 3px 10px #fff; }
   .menu-movil {
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@ picture {
         background: #F27B1C;
         width: 4rem; }
   .logo-nombre {
-    gap: 1.5rem;
+    gap: .5rem;
     flex-direction: row; }
     .logo-nombre img {
       width: 6rem; } }
@@ -123,7 +123,9 @@ picture {
     margin: 1rem 12rem; }
   .enlaces {
     display: flex;
-    max-height: 10rem; } }
+    max-height: 10rem; }
+    .enlaces a {
+      color: #032638; } }
 
 .textos-interiores h3 {
   font-size: 28px;
@@ -161,7 +163,7 @@ picture {
 @media (min-width: 920px) {
   .diagonal {
     visibility: 1;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
@@ -328,24 +330,17 @@ picture {
 @media (min-width: 480px) {
   .grid ul {
     display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 0fr);
     grid-gap: 1px;
     grid-row-gap: 0.5px;
-    padding: 0;
-    float: left; }
+    padding: 0; }
     .grid ul img {
       width: 13rem;
       height: 13rem; } }
 
 @media (min-width: 768px) {
   .grid ul {
-    float: right;
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1px;
-    grid-row-gap: 0.5px;
-    padding: 0;
-    grid-template-columns: repeat(3, 0fr); }
+    float: right; }
     .grid ul img {
       width: 16rem;
       height: 16rem; } }
@@ -353,7 +348,7 @@ picture {
 @media (min-width: 1200px) {
   .grid ul {
     display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 0fr);
     grid-gap: 1px;
     grid-row-gap: 0.5px;
     padding: 0; }
