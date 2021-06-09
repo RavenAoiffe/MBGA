@@ -1,0 +1,16 @@
+.footer-interno{
+    position: relative;
+    width: 100%;
+    background: $azulBG;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    p{
+        color:$blanco;
+    }
+    a{
+        color:$blanco;
+        font-weight: $bold;
+    }
+}

@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php 
+include 'includes/templates/header.html';
+include 'includes/templates/menu.html';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>MBGA</title>
-</head>
-
-<body>
-    <nav>
-        <div class="contenedor navegador">
-            <div class="logo-nombre">
-                <img src="build/img/logos/logo_svg.svg" alt="logo">
-                <h2>Mauricio Guerrero</h2>
-            </div>
-            <div class="menu-movil">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="enlaces">
-                <a href="#">Académico</a>
-                <a href="#">Profesional</a>
-            </div>
-        </div>
-    </nav>
+?>
     <div class="columnas contenedor">
         <div class="columna">
             <div class="textos-interiores">
@@ -250,31 +220,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-movil">
-        <div class="contenedor">
-                 <div class="textos-interiores">
-            <img src="build/img/logos/uam.svg" alt="UAM">
-            <h3>Contacto</h3>
-            <p class="size-14">
-                UAM: 55 53 18 9187 y 9189 <br>
-                ext. 5575 <br><br>
+    <?php 
+include 'includes/templates/footer.html';
 
-                Correos electrónicos: <br>
-                <a href="mailto:mgart@azc.uam.mx">mgart@azc.uam.mx</a> <br>
-                <a href="mailto:mgart1000@gmail.com">mgart1000@gmail.com</a>
-                <br><br>
-
-                WhatsApp: 55 2936 0072 <br><br>
-
-                Todas las fotografías <br> pertenecen al <br> Matro. Mauricio Benito <br> Guerrero Alarcón
-                <br><br>Sitio por <a href="#" target="_blank" rel="noopener noreferrer">Bk Studio</a>
-            </p>
-
-        </div>
-        </div>
-   
-    </div>
-    <div class="diagonal"></div>
-</body>
-
-</html>
+?>

@@ -1,0 +1,61 @@
+#profesional{
+    .textos{
+        a{
+            color:$blanco;
+        }
+        h3,p{
+            color:$negro;
+            font-size: 3rem;
+
+            @include desktop{
+                color:$blanco;
+            }
+        }
+        p{
+            text-transform: uppercase;
+            font-weight: $bold;
+        font-size: 16px;}
+    }
+    .menu-rapido{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+        span{
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            display: block;
+            float: left;
+            margin: 7px;
+            border:1px solid $azulCielo;
+        }
+        a{
+            color:$blanco;
+            &.activo,&:hover{
+                color:$azulCielo;
+            }
+        }
+        .activo{
+            span{
+                background-color: $azulCielo;
+            }  
+            
+        }
+    }
+    .linea-del-tiempo{
+        .proyecto-anio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h4{
+                color:$azulCielo;
+                font-weight: $black;
+                font-size: 5rem;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
