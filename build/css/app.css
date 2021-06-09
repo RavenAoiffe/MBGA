@@ -339,11 +339,15 @@ picture {
       height: 13rem; } }
 
 @media (min-width: 768px) {
-  .grid ul {
-    float: right; }
-    .grid ul img {
-      width: 16rem;
-      height: 16rem; } }
+  .grid {
+    margin-bottom: 3rem;
+    position: relative;
+    float: left; }
+    .grid ul {
+      float: right; }
+      .grid ul img {
+        width: 16rem;
+        height: 16rem; } }
 
 @media (min-width: 1200px) {
   .grid ul {
