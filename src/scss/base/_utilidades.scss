@@ -9,6 +9,10 @@
 }
 @include tablet{
     .display-tablet{
-    display: block;
+        display: block;
+    }
 }
+
+.grid-gap1{
+    grid-gap:1rem!important;
 }
