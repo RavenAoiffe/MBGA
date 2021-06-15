@@ -1,9 +1,16 @@
 <?php 
 /**GET URL Y ESO LO PASAMOS A MENU, SI EXISTE LA SUBRAYAMOS. LO MISMO CON EL FOOTER */
-include 'includes/templates/header.html';
+/*include 'includes/templates/header.html';
 include 'includes/templates/menu.html';
+*/
+require 'includes/functions.php';
+//include 'includes/templates/header.html';
+includeTemplate('header.html',false);
+
+includeTemplate('menu.php',true);
 
 ?>
+
 <div class="columnas">
     <div class="columna"></div>
     <div class="columna">

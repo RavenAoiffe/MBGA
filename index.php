@@ -1,6 +1,10 @@
 <?php 
-include 'includes/templates/header.html';
-include 'includes/templates/menu.html';
+
+require 'includes/functions.php';
+
+includeTemplate('header.html',false);
+
+includeTemplate('menu.php',false);
 
 ?>
     <div class="columnas contenedor">

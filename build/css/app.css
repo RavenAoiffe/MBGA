@@ -18,6 +18,16 @@
 .grid-gap1 {
   grid-gap: 1rem !important; }
 
+.underline {
+  text-decoration: underline; }
+
+.row-flex {
+  flex-direction: row !important; }
+  .row-flex img, .row-flex h2 {
+    margin: 10px !important; }
+  .row-flex h2 {
+    font-size: 6rem !important; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
