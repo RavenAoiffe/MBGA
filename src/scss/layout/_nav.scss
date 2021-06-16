@@ -104,6 +104,9 @@
         max-height: 10rem;
         a{
             color:$azulBG;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }  
 }

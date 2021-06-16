@@ -141,7 +141,9 @@ picture {
     display: flex;
     max-height: 10rem; }
     .enlaces a {
-      color: #032638; } }
+      color: #032638; }
+      .enlaces a:hover {
+        text-decoration: underline; } }
 
 .textos-interiores h3 {
   font-size: 28px;

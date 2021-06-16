@@ -17,7 +17,7 @@
         <div class="contenedor navegador">
         <div class="logo-nombre <?php echo $internas===true? 'row-flex' : '' ?>">
             <img src="build/img/logos/logo_svg.svg" alt="logo">
-            <h2>Mauricio Guerrero</h2>
+            <a href="index.php"> <h2>Mauricio Guerrero</h2></a>
         </div>
         <div class="menu-movil">
             <span></span>
