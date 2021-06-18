@@ -11,19 +11,10 @@ includeTemplate('menu.php',true);
 
 ?>
 
-<div class="columnas">
-    <div class="columna"></div>
-    <div class="columna">
-        <div class="titulos-intermedios">
-                    <h3>
-                        Expocisiones y eventos individuales
-                    </h3>
-                </div>
-    </div>
-</div>
+
             
     <div id="profesional" class="columnas contenedor">
-        <div class="columna">
+        <div class="columna navegacion-lateral">
             <div class="textos">
                 <h3>Expocisiones</h3>
                 <p>Individual</p>
@@ -46,7 +37,12 @@ includeTemplate('menu.php',true);
                <h3><a href="#">Contacto</a></h3> 
             </div>
         </div>
-        <div class="columna">
+        <div class="columna contenido-interno">
+            <div class="titulos-intermedios">
+                <h3>
+                    Expocisiones y eventos individuales
+                </h3>
+            </div>
             <div class="columnas grid-gap1">
                 <div class="linea-del-tiempo">
                     <div class="proyecto-anio">
@@ -66,28 +62,25 @@ includeTemplate('menu.php',true);
                     <div class="proyecto-anio">
                         <h4>2008</h4>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Asperiores, tempora pariatur ipsa quidem, accusantium quaerat quisquam 
-                            <br><br> sit aliquid tenetur dicta commodi provident doloribus in 
-                            perspiciatis iure quod aliquam nemo aspernatur.
+                            <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                        </p>
+                    </div>
+                    <div class="proyecto-anio">
+                        <h4>2007</h4>
+                        <p>
+                        <i>Nuestro negro espejo humeante</i>, performance dentro del Congreso Internacional El Cuerpo Descifrado, org. Varios UAM, UNAM, Instituto de investigaciones Filológicas, Oct.07
                         </p>
                     </div>
                     <div class="proyecto-anio">
                         <h4>2005</h4>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Asperiores, tempora pariatur ipsa quidem, accusantium quaerat quisquam 
-                            <br><br> sit aliquid tenetur dicta commodi provident doloribus in 
-                            perspiciatis iure quod aliquam nemo aspernatur.
+                        En el II Congreso Internacional de Artes, Ciencias y Humanidades, El Cuerpo Descifrado, participó con la obra  <i>“Cercenados y mutilados”</i>, Performance-Instalación en el Jardín de San Jerónimo, y registro de la acción en Celda Contemporánea, Universidad del Claustro de Sor Juana, Co-organizado UAM, UAP, Fund. Centro Histórico, Cahctas, Casa Vecina, México, DF.
                         </p>
                     </div>
                     <div class="proyecto-anio">
-                        <h4>2003</h4>
+                        <h4>2004</h4>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Asperiores, tempora pariatur ipsa quidem, accusantium quaerat quisquam 
-                            <br><br> sit aliquid tenetur dicta commodi provident doloribus in 
-                            perspiciatis iure quod aliquam nemo aspernatur.
+                        Obra de arte acción (performance) e instalación artística “Cercenados, seres que sufren…” en el marco del Foro Nacional de Arboricultura en la Facultad de Estudios Superiores Iztacala, UNAM, en las áreas verdes del campus, el 24 de mayo de 2004, UNAM, UAM Asociación Nacional de Arboricultura A.C.
                         </p>
                     </div>
                     <div class="proyecto-anio">
@@ -157,14 +150,16 @@ includeTemplate('menu.php',true);
                     </div>
                 </div>
             </div>
+            <footer>
+                <div class="footer-interno">
+                        <p>
+                        Todos los derechos pertenecen al Matro. Mauricio Benito Guerrero Alarcón
+                        <br>
+                        Sitio por <a href="#">BK Studio</a>
+                    </p>
+                </div>
+            </footer>
         </div>
 </div>
-<footer>
-    <div class="footer-interno">
-        <p>
-            Todos los derechos pertenecen al Matro. Mauricio Benito Guerrero Alarcón
-            <br>
-            Sitio por <a href="#">BK Studio</a>
-        </p>
-    </div>
-</footer>
+
+<script src="build/js/bundle.js"></script>

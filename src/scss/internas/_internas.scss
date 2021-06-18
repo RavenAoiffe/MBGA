@@ -1,0 +1,47 @@
+.navegacion-lateral{
+    @include desktop{
+        position: fixed;
+        width: 40%;
+        margin-top: 20rem;
+        top: 0;
+    }
+}
+.contenido-interno{
+   @include desktop{
+        z-index: -2;
+    position: absolute;
+    right: 8%;
+    width: 40%;
+    top:30%;
+    .footer-interno{
+        width: 180%;
+        left:-60%;
+    }
+   }
+   
+}
+.navegador-interno {
+    @include desktop{
+        position: fixed;
+        width: 120%;
+        left: 0;
+        right: 0;
+        transition: 1s ease-in;
+    }
+    
+    .enlaces{
+        background-color: $blanco;
+        @include desktop-large{
+        width: 55%;
+        top:0;
+        } 
+      
+        }  
+    &.fijo{
+            @include desktop{
+                top:0;
+            }
+            
+        }
+    
+}

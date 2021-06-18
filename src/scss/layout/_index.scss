@@ -46,8 +46,8 @@
     object-fit: cover;
     height:190%;
     background-image: url('../img/diagonal.svg');
-    background-size: cover;
-    width: 100%;
+    background-size: contain;
+    width: 95%;
     }
 }
 
@@ -61,6 +61,12 @@
 
 }
 
+@include desktop-large{
+    .diagonal{
+        background-size: cover;
+        width: 87%;
+    }
+}
 @include telefono{
     .textos-interiores{
         p,a{

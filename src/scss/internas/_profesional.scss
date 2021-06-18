@@ -31,7 +31,10 @@
             border:1px solid $azulCielo;
         }
         a{
-            color:$blanco;
+            @include desktop{
+                color:$blanco;
+            }
+            color:$azulCielo;
             &.activo,&:hover{
                 color:$azulCielo;
             }
@@ -44,6 +47,7 @@
         }
     }
     .linea-del-tiempo{
+        margin:4rem 0;
         .proyecto-anio{
             display: flex;
             flex-direction: column;

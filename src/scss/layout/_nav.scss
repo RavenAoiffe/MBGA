@@ -12,15 +12,29 @@
             }
         }
     }
+    h2{ 
+        margin:0;
+            font-size: 2rem;
+        @include telefono-largo{
+            line-height: 7rem;
+           
+        }
+    }
     .navegador{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        &.navegador-interno{
+            justify-content: space-around;
+            @include tablet{
+                justify-content: space-between;  
+            }
+        }
     }
     
     .enlaces {
         display: none;
-        width: 50%;
+        width: 45%;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -33,7 +47,7 @@
     .menu-movil{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /*justify-content: center;*/
         span{
             height: .7rem;
             margin: .5rem 0;
@@ -88,7 +102,6 @@
     h2{
         font-size: 8rem;
         text-align: right;
-        line-height: 7rem;
     }
     .logo-nombre{
         flex-direction: column;

@@ -14,7 +14,7 @@
   var_dump("</pre>");*/
 ?>
 <nav>
-        <div class="contenedor navegador">
+        <div class="contenedor navegador <?php echo $menu===true? 'navegador-interno' : '' ?>">
         <div class="logo-nombre <?php echo $internas===true? 'row-flex' : '' ?>">
             <img src="build/img/logos/logo_svg.svg" alt="logo">
             <a href="index.php"> <h2>Mauricio Guerrero</h2></a>
