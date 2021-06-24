@@ -1,5 +1,4 @@
 .footer{
-    width: 100%;
     padding: 4rem 0;
     p,a{
         color: $blanco;
@@ -17,6 +16,9 @@
     background-color: $azulBG;
     margin-top: 4rem;
     padding:4rem 0;
+    position: relative;
+    float: left;
+    width: 100%;
     h3{
         color:$blanco;
     }

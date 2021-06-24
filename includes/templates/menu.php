@@ -1,7 +1,7 @@
 <?php  
   $url =  $_SERVER['REQUEST_URI'];
 
-  if(strpos($url, "profesional") !== false) {
+  if(strpos($url, "profesional") !== false || strpos($url, "academico") !== false) {
       $menu = true;
       $internas = true;
   }
@@ -13,6 +13,8 @@
   var_dump($var);
   var_dump("</pre>");*/
 ?>
+
+
 <nav>
         <div class="contenedor navegador <?php echo $menu===true? 'navegador-interno' : '' ?>">
         <div class="logo-nombre <?php echo $internas===true? 'row-flex' : '' ?>">
@@ -23,11 +25,6 @@
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <div class="enlaces">
-            <a href="#">Académico</a>
-            
-            <a href="profesional.php" <?php echo $menu===true? 'class="underline"' : '' ?>>Profesional</a> 
         </div>
     </div>
 </nav>

@@ -14,16 +14,13 @@
     }
     h2{ 
         margin:0;
-            font-size: 2rem;
-        @include telefono-largo{
-            line-height: 7rem;
-           
-        }
+        font-size: 2rem;
     }
     .navegador{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 3rem 0;
         &.navegador-interno{
             justify-content: space-around;
             @include tablet{
@@ -31,18 +28,9 @@
             }
         }
     }
-    
+   
     .enlaces {
         display: none;
-        width: 45%;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        a{
-        text-transform: uppercase;
-        font-weight: $bold;
-        text-shadow: 0px 3px 10px #fff;
-        }
     }
     .menu-movil{
         display: flex;
@@ -90,15 +78,30 @@
 @media (min-width:920px) {
     h2{color:$blanco;
     }
+    .enlaces{
+        align-items: center;
+        height:10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width:60%;
+        a{
+            text-transform: uppercase;
+            color:$azulBG;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }    .menu-movil{
+        display: none;
+    }
 }
 
 @media (min-width:1100px) {
-    .menu-movil{
-        display: none;
-    }
-    .enlaces {
+
+   /* .enlaces {
         display: flex;
-    }
+    }*/
     h2{
         font-size: 8rem;
         text-align: right;
@@ -111,15 +114,5 @@
             width: 6rem;
             margin: 1rem 12rem;
         }
-    }
-    .enlaces {
-        display: flex;
-        max-height: 10rem;
-        a{
-            color:$azulBG;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }  
+    } 
 }

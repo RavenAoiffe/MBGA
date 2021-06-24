@@ -1,47 +1,79 @@
 .navegacion-lateral{
-    @include desktop{
+  /*  @include desktop{
         position: fixed;
         width: 40%;
         margin-top: 20rem;
         top: 0;
-    }
+    }*/
 }
-.contenido-interno{
-   @include desktop{
-        z-index: -2;
-    position: absolute;
-    right: 8%;
-    width: 40%;
-    top:30%;
-    .footer-interno{
-        width: 180%;
-        left:-60%;
+#index{
+    .menu-diagonal{
+    @include tablet{
+        position: absolute;
+        background-size: cover;
+       } 
     }
-   }
-   
+
 }
-.navegador-interno {
-    @include desktop{
+.menu-diagonal{
+    position:relative;
+    background:$blanco;
+    @include tablet{
+        background: url('../img/diagonal.svg');
+        background-size: cover;
+        width:40%;
+        height:190%; 
         position: fixed;
-        width: 120%;
+        top: 0;
         left: 0;
-        right: 0;
-        transition: 1s ease-in;
+         z-index:2;
     }
-    
-    .enlaces{
-        background-color: $blanco;
-        @include desktop-large{
-        width: 55%;
-        top:0;
-        } 
-      
-        }  
-    &.fijo{
-            @include desktop{
-                top:0;
-            }
-            
+    @include desktop-large{
+         background-size: contain;
+        width:85%;
+    }
+}  
+
+.layout{
+    display: block;
+    float: right;
+    width: 100%;
+    &.right{
+        flex-direction: row-reverse;
+        .enlaces{
+            background-color: #ffffff;
+            position:fixed;
+            right: 0;
         }
-    
+    }
+    .contenido-interno{
+        margin-bottom:3rem;
+        @include tablet{
+            margin-top:15rem;
+            width: 60%;
+            float: right; 
+        }
+    }
+
+}    
+footer
+{
+    position:static;
+}
+#index{
+    .enlaces{
+        position:relative;
+        gap:8rem;
+        float: right;
+        justify-content: flex-end;
+    }
+}
+.navegacion-lateral{
+    .textos{
+        h3,p,a{
+            @include tablet{
+                color:$blanco;
+            }
+        }
+    }
 }
