@@ -62,8 +62,8 @@ includeTemplate('header.html',false);
 <div class="layout right ">
 
                     <div class="enlaces">
-                        <a href="#">Acádemico</a>
-                        <a href="#">Profesional</a>
+                        <a href="academico.php">Acádemico</a>
+                        <a href="profesional.php">Profesional</a>
                     </div>
           
             <!-- Aquí va a ir el grid-->

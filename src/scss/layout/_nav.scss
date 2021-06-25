@@ -35,6 +35,10 @@
     .menu-movil{
         display: flex;
         flex-direction: column;
+        position: fixed;
+        right: 10%;
+        background:$blanco;
+        padding: 5px;
         /*justify-content: center;*/
         span{
             height: .7rem;
@@ -73,11 +77,12 @@
     }
     .columnas{
             @include grid(grid,2,4rem,10px,1fr)
-        }
+        } 
+         h2{color:$blanco;
+    }
 }
 @media (min-width:920px) {
-    h2{color:$blanco;
-    }
+
     .enlaces{
         align-items: center;
         height:10rem;
@@ -88,12 +93,18 @@
         a{
             text-transform: uppercase;
             color:$azulBG;
-            &:hover{
-                text-decoration: underline;
+            font-weight: $bold;
+            &:hover{ 
+              text-decoration: underline;
             }
         }
     }    .menu-movil{
         display: none;
+    }
+    .navegador-interno{
+        h2{
+            line-height: 6rem;
+        }
     }
 }
 
