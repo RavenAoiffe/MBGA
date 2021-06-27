@@ -440,23 +440,48 @@ picture {
 .navegacion-lateral ul {
   list-style: none; }
   .navegacion-lateral ul li {
-    text-transform: uppercase;
     font-size: 2rem; }
     .navegacion-lateral ul li a {
-      text-transform: initial;
+      text-transform: uppercase;
       font-size: 1.5rem; }
-    .navegacion-lateral ul li .dropdown {
-      display: flex;
-      flex-direction: column; }
-      .navegacion-lateral ul li .dropdown .activo {
-        color: #168ee7; }
-    .navegacion-lateral ul li span {
-      width: 1rem;
-      height: 1rem;
-      border: 1px solid #168ee7;
-      border-radius: 50%;
-      display: inline-flex;
-      margin: 0 10px; }
+
+.navegacion-lateral .dropdown {
+  display: none;
+  flex-direction: column; }
+  .navegacion-lateral .dropdown a {
+    text-transform: initial; }
+  .navegacion-lateral .dropdown.colectivo .activo {
+    color: #cc996b; }
+    .navegacion-lateral .dropdown.colectivo .activo span {
+      background-color: #cc996b; }
+  .navegacion-lateral .dropdown.colectivo span {
+    border: 1px solid #cc996b; }
+  .navegacion-lateral .dropdown.individual .activo {
+    color: #168ee7; }
+    .navegacion-lateral .dropdown.individual .activo span {
+      background-color: #168ee7; }
+  .navegacion-lateral .dropdown.individual span {
+    border: 1px solid #168ee7; }
+  .navegacion-lateral .dropdown.obra .activo {
+    color: #0cc91d; }
+    .navegacion-lateral .dropdown.obra .activo span {
+      background-color: #0cc91d; }
+  .navegacion-lateral .dropdown.obra span {
+    border: 1px solid #0cc91d; }
+  .navegacion-lateral .dropdown.proyecto .activo {
+    color: #9E2105; }
+    .navegacion-lateral .dropdown.proyecto .activo span {
+      background-color: #9E2105; }
+  .navegacion-lateral .dropdown.proyecto span {
+    border: 1px solid #9E2105; }
+
+.navegacion-lateral span {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #168ee7;
+  border-radius: 50%;
+  display: inline-flex;
+  margin: 0 10px; }
 
 .navegacion-lateral.bottom {
   display: flex;
@@ -473,7 +498,7 @@ picture {
 
 .menu-diagonal {
   position: relative;
-  background: #ffffff; }
+  background: #032638; }
   @media (min-width: 768px) {
     .menu-diagonal {
       background: url("../img/diagonal.svg");
@@ -486,7 +511,6 @@ picture {
       z-index: 2; } }
   @media (min-width: 1200px) {
     .menu-diagonal {
-      background-size: contain;
       width: 85%; } }
 
 .layout {
@@ -522,6 +546,11 @@ footer {
 
 .titulos-intermedios {
   text-align: center; }
+
+.panel {
+  padding: 0 1rem;
+  line-height: 3rem;
+  flex-direction: column; }
 
 #Expocisiones .proyecto-anio h4 {
   color: #168ee7;

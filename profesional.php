@@ -13,11 +13,13 @@ includeTemplate('header.html',false);
         <div class="contenedor">
             <div class="columna navegador-rapido">
                 <div class="navegacion-lateral ">
-                    <h3>Expocisiones</h3>
-                    <ul>
+                   <a href="#" class="acordeon">
+                        <h3>Expocisiones</h3>
+                    </a>
+                    <ul class="panel no-margin">
                         <li>
-                            Individual
-                            <div class="dropdown">
+                            <a href="#" class="acordeon"> Individual</a>
+                            <div class="dropdown individual">
                                 <a class="activo" href="#">
                                 <span ></span>
                                 Actualidad - 2000
@@ -29,20 +31,88 @@ includeTemplate('header.html',false);
                             </div>
                         </li>
                         <li>
-                            Colectivo
+                        <a href="#" class="acordeon"> Colectivo</a>
+                            <div class="dropdown colectivo">
+                                <a class="activo" href="#">
+                                    <span ></span>
+                                    70´s
+                                </a>
+                                <a href="#">
+                                    <span></span>
+                                    80´s
+                                </a>
+                                <a href="#">
+                                    <span></span>
+                                    90´s
+                                </a>
+                                <a href="#">
+                                    <span></span>
+                                    2000
+                                </a>
+                                <a href="#">
+                                    <span></span>
+                                   2010
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div class="navegacion-lateral ">
-                    <h3>Obra publicada</h3>
+                   <a href="#" class="acordeon">
+                        <h3>Obra publicada</h3>
+                    </a>
+                    <div class="dropdown obra">
+                        <a class="activo" href="#">
+                        <span ></span>
+                        Actualidad - 2011
+                        </a>
+                        <a href="#">
+                        <span></span>
+                        2010-1990
+                        </a>
+                        <a href="#">
+                        <span></span>
+                        1989-1976
+                        </a>
+                    </div>
                 </div>
                 <div class="navegacion-lateral ">
-                    <h3>Proyectos</h3>
+                    <a href="#" class="acordeon">
+                        <h3>Proyectos</h3>
+                    </a>
+                    <div class="dropdown proyecto">
+                        <a class="activo" href="#">
+                        <span ></span>
+                            Arte Correo
+                        </a>
+                        <a href="#">
+                        <span></span>
+                            Arte Fax
+                        </a>
+                        <a href="#">
+                        <span></span>
+                            Expocisiones
+                        </a>
+                        <a href="#">
+                        <span></span>
+                            Instalación y Performance
+                        </a>
+                        <a href="#">
+                        <span></span>
+                            Actividades en grupo
+                        </a>
+                        <a href="#">
+                        <span></span>
+                            Proyectos en proceso
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="navegacion-lateral bottom">
-                <h3><a href="#">Contacto</a></h3> 
-                </div>
+                <div class="navegacion-lateral ">
+                    <a href="#">
+                        <h3>Contacto</h3>
+                    </a>
+                </div> 
+            </div>         
         </div>
     </div>
         <div class="contenedor">
@@ -164,7 +234,7 @@ includeTemplate('header.html',false);
         </div>
 
         <footer>
-            <div class="footer-interno">
+            <div id="contacto" class="footer-interno">
                     <p>
                         Todos los derechos pertenecen al Matro. Mauricio Benito Guerrero Alarcón
                         <br>
@@ -173,5 +243,6 @@ includeTemplate('header.html',false);
             </div>
         </footer> 
     </div>
+    <script src="build/js/bundle.js"></script>
 </body>
 </html>
