@@ -28,7 +28,7 @@ const panel = () =>{
             var panel = this.nextElementSibling;
             if (panel.style.display === "flex") {
                 panel.style.display = "none";
-              } else { 
+              } else {  
                 panel.style.display = "flex";
               }
         })
