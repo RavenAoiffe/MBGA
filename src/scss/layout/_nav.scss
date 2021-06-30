@@ -9,7 +9,20 @@
             h2{
                 font-family: $fuente_apoyo;
                 max-width: 10rem;
-                line-height: 8rem;
+                line-height: 4rem;
+                color:$azulBG;
+                @include tablet{
+                     color:$blanco;
+                }
+                @include desktop{
+                   
+                    line-height: 6rem;
+                    font-size: 5rem;
+                }
+                @include desktop-large{
+                    line-height: 8rem;
+                    font-size: 8rem;
+                }
             }
         }
     }
@@ -23,7 +36,7 @@
         justify-content: space-between;
         padding: 3rem 0;
         &.navegador-interno{
-            justify-content: space-around;
+            justify-content:start;
             @include tablet{
                 justify-content: space-between;  
             }

@@ -5,7 +5,7 @@ require 'includes/functions.php';
 includeTemplate('header.html',false);
 
 ?>
-    <div id="profesional">
+    <div id="profesional" class="internas">
     <div class="menu-diagonal">
         <?php 
             includeTemplate('menu.php',true);

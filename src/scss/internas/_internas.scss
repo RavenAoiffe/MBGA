@@ -3,8 +3,12 @@
     flex-direction: column;
 }
 .navegacion-lateral{
-    p,a,h3,li{
-        color:$blanco;
+    p,a,h3,li{ 
+        color:$azulBG;
+
+        @include tablet{
+                 color:$blanco;  
+        }
     }
     ul{
         list-style:none;
@@ -59,11 +63,15 @@
         background-size: cover;
        } 
     }
-
 }
+/*
+.internas{
+    .menu-diagonal{
+        position:relative;
+        background:$azulBG; 
+    }
+}*/
 .menu-diagonal{
-    position:relative;
-    background:$azulBG;
     @include tablet{
         background: url('../img/diagonal.svg');
         background-size: cover;

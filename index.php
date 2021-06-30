@@ -70,6 +70,8 @@ includeTemplate('header.html',false);
             <div class="columna contenido-interno">
                 <div class="grid">
                         <ul>
+                            <li></li>
+                            <li></li>
                             <li>
                                 <a href="#" class="">
                                     <img src="build/img/proyectos/juego_sustentabilidad2015.jpg" alt="tablero">

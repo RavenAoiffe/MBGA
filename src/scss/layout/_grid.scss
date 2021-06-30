@@ -3,7 +3,7 @@
     .grid{
     
         ul{
-            @include grid(inline-grid,2,1px,.5px,1fr);
+            @include grid(inline-grid,2,3px,3px,1fr);
             margin:0;
             list-style: none;
             li{
@@ -83,7 +83,7 @@
 @include telefono_largo{
     .grid{
         ul{
-            @include grid(inline-grid,3,1px,.5px,0fr);
+            @include grid(inline-grid,3,3px,3px,0fr);
              img{
                 width: 13rem;
                 height: 13rem;
@@ -105,7 +105,8 @@
 @include desktop-large{
     .grid{ 
         ul{
-            @include grid(inline-grid,4,1px,.5px,0fr);
+            @include grid(inline-grid,4,3px,3px,0fr);
+            padding:1.5px;
             img{
                 width: 18rem;
                 height: 18rem;
