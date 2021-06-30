@@ -70,7 +70,8 @@ picture {
     display: flex; }
     nav .logo-nombre h2 {
       font-family: "Inter", sans-serif;
-      max-width: 10rem; }
+      max-width: 10rem;
+      line-height: 8rem; }
   h2 {
     margin: 0;
     font-size: 2rem; }
