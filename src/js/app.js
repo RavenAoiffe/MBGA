@@ -22,17 +22,59 @@ const panel = () =>{
 
     //console.log(acordeon)
   
-    for(i = 0; i<= acordeon.length; i++){
+    /* for(i = 0; i<= acordeon.length; i++){
         acordeon[i].addEventListener('click', function () {
             this.classList.toggle('activo');
             var panel = this.nextElementSibling;
-            if (panel.style.display === "flex") {
+           if (panel.style.display === "flex") {
                 panel.style.display = "none";
               } else {  
                 panel.style.display = "flex";
               }
         })
-    }
+    }*/
 }
 
-panel();
+//panel();
+
+var tablinks = document.getElementsByClassName("tablinks");
+
+for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].addEventListener('click', function(){
+        this.classList.toggles("active");
+        var panel = this.nextElementSibling;
+
+        if(this.classList.contains('active')){
+            //this.classList.remove('active');
+           
+          //  if (panel.style.display === "flex") {
+                panel.style.display = "flex";
+            //  } else {  
+              //  panel.style.display = "flex";
+              //}
+        }
+        else{
+            panel.style.display = "none";  
+        }
+        /*
+            if (panel.style.display === "flex") {
+                panel.style.display = "none";
+              } else {  
+                panel.style.display = "flex";
+              }*/
+    })
+  }
+/*
+function abrirInformacion(evt, tipoDeExpocision) {
+    var i, tabcontent;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tipoDeExpocision).style.display = "block";
+    evt.currentTarget.className += " active";
+  }*/
