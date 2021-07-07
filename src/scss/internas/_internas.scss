@@ -21,22 +21,45 @@
         }
     }
     .dropdown{
-        display: none;
+        display: flex;
         flex-direction: column;
         a{
             text-transform: initial;
         }
-        &.colectivo{
+        .colectivo{
             @include dropdown($carne);
+            a{
+                &:hover span{
+                    background-color: $carne;
+                }
+            }
         }
-        &.individual{
+        .individual{
             @include dropdown($azulCielo);
+            a{
+                &:hover span{
+                    background-color: $azulCielo;
+                }
+            }
         }
         &.obra{
             @include dropdown($verdeFosfo);
+            a{
+                &:hover span{
+                    background-color: $verdeFosfo;
+                }
+            }
         }
-        &.proyecto{
+        .proyecto{
             @include dropdown($rojoFuerte);
+            a{
+                &:hover span{
+                    background-color: $rojoFuerte;
+                }
+            }
+        }
+        div{
+            flex-direction: column;
         }
     }
     span{
@@ -102,7 +125,7 @@
     .contenido-interno{
         margin-bottom:3rem;
         @include tablet{
-            margin-top:15rem;
+            margin-top:5rem;
             width: 60%;
             float: right; 
         }
@@ -133,9 +156,4 @@ footer
 
 .titulos-intermedios {
     text-align: center;
-}
-.panel{
-    padding: 0 1rem;
-    line-height: 3rem;
-    flex-direction: column;
 }

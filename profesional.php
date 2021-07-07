@@ -9,112 +9,9 @@ includeTemplate('header.html',false);
     <div class="menu-diagonal">
         <?php 
             includeTemplate('menu.php',true);
+            includeTemplate('menu-lateral.php',false);
         ?>
-        <div class="contenedor">
-            <div class="columna navegador-rapido">
-                <div class="navegacion-lateral ">
-                   <a href="#" class="acordeon tablinks">
-                        <h3>Expocisiones</h3>
-                    </a>
-                    <ul class="panel no-margin">
-                        <li>
-                        <a href="#Expocisiones" class="acordeon ">
-                        Individual </a>
-                            <div class="dropdown individual">
-                                <a class="activo" href="#">
-                                <span ></span>
-                                Actualidad - 2000
-                                </a>
-                                <a href="#">
-                                <span></span>
-                                1999 -1978
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                        <a href="#Colectivas" class="acordeon "> Colectivo</a>
-                            <div class="dropdown colectivo">
-                                <a class="activo" href="#">
-                                    <span ></span>
-                                    70´s
-                                </a>
-                                <a href="#">
-                                    <span></span>
-                                    80´s
-                                </a>
-                                <a href="#">
-                                    <span></span>
-                                    90´s
-                                </a>
-                                <a href="#">
-                                    <span></span>
-                                    2000
-                                </a>
-                                <a href="#">
-                                    <span></span>
-                                   2010
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navegacion-lateral ">
-                   <a href="#Obra" class="acordeon tablinks">
-                        <h3>Obra publicada</h3>
-                    </a>
-                    <div class="dropdown obra">
-                        <a class="activo" href="#">
-                        <span ></span>
-                        Actualidad - 2011
-                        </a>
-                        <a href="#">
-                        <span></span>
-                        2010-1990
-                        </a>
-                        <a href="#">
-                        <span></span>
-                        1989-1976
-                        </a>
-                    </div>
-                </div>
-                <div class="navegacion-lateral ">
-                    <a href="#" class="acordeon tablinks">
-                        <h3>Proyectos</h3>
-                    </a>
-                    <div class="dropdown proyecto">
-                        <a class="activo" href="#">
-                        <span ></span>
-                            Arte Correo
-                        </a>
-                        <a href="#">
-                        <span></span>
-                            Arte Fax
-                        </a>
-                        <a href="#">
-                        <span></span>
-                            Expocisiones
-                        </a>
-                        <a href="#">
-                        <span></span>
-                            Instalación y Performance
-                        </a>
-                        <a href="#">
-                        <span></span>
-                            Actividades en grupo
-                        </a>
-                        <a href="#">
-                        <span></span>
-                            Proyectos en proceso
-                        </a>
-                    </div>
-                </div>
-                <div class="navegacion-lateral ">
-                    <a href="#">
-                        <h3>Contacto</h3>
-                    </a>
-                </div> 
-            </div>         
-        </div>
+        
     </div>
         <div class="contenedor">
            <div class="layout right ">
@@ -130,7 +27,7 @@ includeTemplate('header.html',false);
                     </div>
                     <div class="columnas grid-gap1">
                         <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
+                            <div id="individual" class="proyecto-anio">
                                 <h4>2015</h4>
                                 <p>
                                 <i>En el río de las tortuguitas, ¡Vive!</i>, Obra de performance en el VII Congreso Internacional de Ciencias, Artes y Humanidades EL CUERPO DESCIFRADO, El Cuerpo descifrado SC., en Auditorio Francisco Javier Mina, UAM Xochimilco, DF. 
@@ -204,7 +101,7 @@ includeTemplate('header.html',false);
                             </div>
                         </div>
                         <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
+                            <div id="milnovecientos" class="proyecto-anio">
                                 <h4>1999-2000</h4>
                                 <p>
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -523,7 +420,146 @@ includeTemplate('header.html',false);
                             </div>
                         </div>
                     </div> 
-                    <div id="tetraedro" class="titulos-intermedios">
+                    <div id="correo" class="titulos-intermedios">
+                        <h4>
+                           Arte Correo
+                            <span>(1998-1989)</span>
+                        </h4>
+                    </div>
+                    <div class="columnas ">
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1998</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1994</h4>
+                                <p>
+                                <i>Nuestro negro espejo humeante</i>, performance dentro del Congreso Internacional El Cuerpo Descifrado, org. Varios UAM, UNAM, Instituto de investigaciones Filológicas, Oct.07
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1993</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1992</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1991</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1990</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1989</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                               <img src="build\img\proyectos\solidarte1982-1986.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="marco" class="titulos-intermedios">
+                        <h4>
+                          Grupo Marco
+                            <span>(1998-1989)</span>
+                        </h4>
+                    </div>
+                    <div class="columnas ">
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1998</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1994</h4>
+                                <p>
+                                <i>Nuestro negro espejo humeante</i>, performance dentro del Congreso Internacional El Cuerpo Descifrado, org. Varios UAM, UNAM, Instituto de investigaciones Filológicas, Oct.07
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1993</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1992</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1991</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1990</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                                <h4>1989</h4>
+                                <p>
+                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="linea-del-tiempo">
+                            <div class="proyecto-anio">
+                               <img src="build\img\proyectos\solidarte1982-1986.jpg" alt="">
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div id="fax" class="titulos-intermedios">
                         <h4>
                            Arte Fax
                             <span>(1998-1989)</span>
@@ -592,7 +628,7 @@ includeTemplate('header.html',false);
                             </div>
                         </div>
                     </div> 
-                    <div id="solidarte" class="titulos-intermedios">
+                    <div id="tetraedro" class="titulos-intermedios">
                         <h4>
                             Grupo tetraedro
                             <span>(1977)</span>
@@ -609,97 +645,6 @@ includeTemplate('header.html',false);
                                 <h4>1977</h4>
                                 <p>
                                     <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
-                                </p>
-                            </div>
-                        </div>
-                    </div> 
-                </div>  
-
-                <div id="Obra" class="columna contenido-interno tabcontent">
-                    <div class="titulos-intermedios">
-                        <h3>
-                            Algunos libros y revistas donde se ha publicado y comentado su obra
-                        </h3>
-                    </div>
-                    <div class="columnas ">
-                        <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
-                                <h4>2017</h4>
-                                <p>
-                                Obra de participación <i> EL JUEGO DE LA SUSTENTABILIDAD</i>, 2º Foro Internacional de Desarrollo Sustentable, Edificio W, UAM A.  
-                                </p>
-                                <img src="build/img/obra/libro_sn.png" alt="libro">
-                            </div>
-                        </div>
-                        <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
-                                <h4>2008</h4>
-                                <p>
-                                    <i>Cuetzpalin ROJO</i>, instalación y video streaming en la Casa de la Primera Imprenta dentro de los Espacios en Acción, Depto. de Evaluación del Diseño, UAM-A.
-                                </p>
-                                <img src="build/img/obra/revista_diseño_mas.jpg" alt="diseno">
-                            </div>
-                        </div>
-                        <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
-                                <h4>2007</h4>
-                                <p>
-                                <i>Nuestro negro espejo humeante</i>, performance dentro del Congreso Internacional El Cuerpo Descifrado, org. Varios UAM, UNAM, Instituto de investigaciones Filológicas, Oct.07
-                                </p>
-                            </div>
-                        </div>
-                        <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
-                                <h4>2005</h4>
-                                <p>
-                                En el II Congreso Internacional de Artes, Ciencias y Humanidades, El Cuerpo Descifrado, participó con la obra  <i>“Cercenados y mutilados”</i>, Performance-Instalación en el Jardín de San Jerónimo, y registro de la acción en Celda Contemporánea, Universidad del Claustro de Sor Juana, Co-organizado UAM, UAP, Fund. Centro Histórico, Cahctas, Casa Vecina, México, DF.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
-                                <h4>2004</h4>
-                                <p>
-                                Obra de arte acción (performance) e instalación artística <i>“Cercenados, seres que sufren…”</i> en el marco del Foro Nacional de Arboricultura en la Facultad de Estudios Superiores Iztacala, UNAM, en las áreas verdes del campus, el 24 de mayo de 2004, UNAM, UAM Asociación Nacional de Arboricultura A.C.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
-                                <h4>1979</h4>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Asperiores, tempora pariatur ipsa quidem, accusantium quaerat quisquam 
-                                    <br><br> sit aliquid tenetur dicta commodi provident doloribus in 
-                                    perspiciatis iure quod aliquam nemo aspernatur.
-                                </p>
-                                <div class="coleccion-imagenes">
-                                <img src="build/img/obra/auro.jpg" alt="auro">
-                                <img src="build/img/obra/auro1.jpg" alt="auro">
-                                <img src="build/img/obra/auro4.jpg" alt="auro">
-                                </div>
-                            </div>
-                        </div>
- 
-                        <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
-                                <h4>1993</h4>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Asperiores, tempora pariatur ipsa quidem, accusantium quaerat quisquam 
-                                    <br><br> sit aliquid tenetur dicta commodi provident doloribus in 
-                                    perspiciatis iure quod aliquam nemo aspernatur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="linea-del-tiempo">
-                            <div class="proyecto-anio">
-                                <h4>1985</h4>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Asperiores, tempora pariatur ipsa quidem, accusantium quaerat quisquam 
-                                    <br><br> sit aliquid tenetur dicta commodi provident doloribus in 
-                                    perspiciatis iure quod aliquam nemo aspernatur.
                                 </p>
                             </div>
                         </div>

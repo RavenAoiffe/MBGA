@@ -27,6 +27,9 @@
   .row-flex img, .row-flex h2 {
     margin: 10px !important; }
 
+.hidden {
+  display: none; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -464,34 +467,44 @@ picture {
       font-size: 1.5rem; }
 
 .navegacion-lateral .dropdown {
-  display: none;
+  display: flex;
   flex-direction: column; }
   .navegacion-lateral .dropdown a {
     text-transform: initial; }
-  .navegacion-lateral .dropdown.colectivo .activo {
+  .navegacion-lateral .dropdown .colectivo .activo {
     color: #cc996b; }
-    .navegacion-lateral .dropdown.colectivo .activo span {
+    .navegacion-lateral .dropdown .colectivo .activo span {
       background-color: #cc996b; }
-  .navegacion-lateral .dropdown.colectivo span {
+  .navegacion-lateral .dropdown .colectivo span {
     border: 1px solid #cc996b; }
-  .navegacion-lateral .dropdown.individual .activo {
+  .navegacion-lateral .dropdown .colectivo a:hover span {
+    background-color: #cc996b; }
+  .navegacion-lateral .dropdown .individual .activo {
     color: #168ee7; }
-    .navegacion-lateral .dropdown.individual .activo span {
+    .navegacion-lateral .dropdown .individual .activo span {
       background-color: #168ee7; }
-  .navegacion-lateral .dropdown.individual span {
+  .navegacion-lateral .dropdown .individual span {
     border: 1px solid #168ee7; }
+  .navegacion-lateral .dropdown .individual a:hover span {
+    background-color: #168ee7; }
   .navegacion-lateral .dropdown.obra .activo {
     color: #0cc91d; }
     .navegacion-lateral .dropdown.obra .activo span {
       background-color: #0cc91d; }
   .navegacion-lateral .dropdown.obra span {
     border: 1px solid #0cc91d; }
-  .navegacion-lateral .dropdown.proyecto .activo {
+  .navegacion-lateral .dropdown.obra a:hover span {
+    background-color: #0cc91d; }
+  .navegacion-lateral .dropdown .proyecto .activo {
     color: #9E2105; }
-    .navegacion-lateral .dropdown.proyecto .activo span {
+    .navegacion-lateral .dropdown .proyecto .activo span {
       background-color: #9E2105; }
-  .navegacion-lateral .dropdown.proyecto span {
+  .navegacion-lateral .dropdown .proyecto span {
     border: 1px solid #9E2105; }
+  .navegacion-lateral .dropdown .proyecto a:hover span {
+    background-color: #9E2105; }
+  .navegacion-lateral .dropdown div {
+    flex-direction: column; }
 
 .navegacion-lateral span {
   width: 1rem;
@@ -550,7 +563,7 @@ picture {
     margin-bottom: 3rem; }
     @media (min-width: 768px) {
       .layout .contenido-interno {
-        margin-top: 15rem;
+        margin-top: 5rem;
         width: 60%;
         float: right; } }
 
@@ -569,11 +582,6 @@ footer {
 
 .titulos-intermedios {
   text-align: center; }
-
-.panel {
-  padding: 0 1rem;
-  line-height: 3rem;
-  flex-direction: column; }
 
 #Expocisiones .proyecto-anio h4 {
   color: #168ee7;

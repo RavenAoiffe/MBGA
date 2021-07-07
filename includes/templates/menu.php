@@ -1,7 +1,7 @@
 <?php  
   $url =  $_SERVER['REQUEST_URI'];
 
-  if(strpos($url, "profesional") !== false || strpos($url, "academico") !== false) {
+  if(strpos($url, "profesional") !== false || strpos($url, "obra") !== false) {
       $menu = true;
       $internas = true;
   }

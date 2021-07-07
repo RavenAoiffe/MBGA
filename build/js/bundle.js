@@ -78,3 +78,26 @@ function abrirInformacion(evt, tipoDeExpocision) {
     document.getElementById(tipoDeExpocision).style.display = "block";
     evt.currentTarget.className += " active";
   }*/
+
+  /* Anclas */
+  document.addEventListener('DOMContentLoaded', function(){
+  scrollNav();
+  })
+   
+function scrollNav(){
+  const enlaces = document.querySelectorAll('.ancla');
+ 
+  enlaces.forEach(
+      function(enlace){
+          enlace.addEventListener('click', function(e){
+              e.preventDefault();
+ 
+              const seccion = document.querySelector(e.target.attributes.href.value);
+              console.log(seccion);
+              seccion.scrollIntoView({
+                  behavior:'smooth'
+              });
+          })
+      }
+  )
+}
