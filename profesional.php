@@ -3,6 +3,7 @@
 require 'includes/functions.php';
 
 includeTemplate('header.html',false);
+includeTemplate('menu-top.php',true);
 
 ?>
     <div id="profesional" class="internas">

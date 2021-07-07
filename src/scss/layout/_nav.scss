@@ -115,8 +115,22 @@
             /*&:hover{ 
               text-decoration: underline;
             }*/
-        }
-    }
+            .underline{
+                width: 0%;
+                height: 2px;
+                background-color: #032638;
+                display: flex;
+                margin: 0 auto;
+                justify-content: center;
+                transition: .5s ease-in;
+                -moz-transition: .5s ease-in;
+            }
+            &:hover >span{
+                width: 80%
+            }
+        }  
+       
+      }
   
     .menu-movil{
         display: none;
