@@ -5,7 +5,7 @@
 
         $profesional = strpos($url,'profesional');
         $obra = strpos($url,'obra');
-        
+        $proyectos = strpos($url,'proyectos');
 
     ?>
 <div class="contenedor">
@@ -75,10 +75,10 @@
             </div>
         </div>
         <div class="navegacion-lateral ">
-            <a  href="#" class="acordeon tablinks">
+            <a  href="proyectos.php" class="acordeon tablinks">
                 <h3>Proyectos</h3>
             </a>
-            <div class="hidden proyecto">
+            <div <?php echo $proyectos !== false ?  'class="dropdown"' : 'class="hidden"'?> >
                 <a class="activo"  href="#">
                 <span ></span>
                     Arte Correo
