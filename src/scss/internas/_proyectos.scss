@@ -1,0 +1,14 @@
+#proyectos{
+    .contenido-interno{
+        margin-top:6rem;
+
+        @include tablet{
+            margin-top:25rem;
+        }
+    }
+    ul {
+        gap: 2rem;
+        row-gap: 1.5rem;
+        padding: 1rem;
+    }
+}

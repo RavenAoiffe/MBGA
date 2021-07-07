@@ -1,77 +1,39 @@
+
 <?php 
 
 require 'includes/functions.php';
 
-includeTemplate('header.html',false);
+includeTemplate('header.html',true);
+includeTemplate('menu-top.php',true);
 
 ?>
-    <div id="index">
-            <div class="menu-diagonal contenedor">
-                <?php 
-                        includeTemplate('menu.php',true);
-                ?>
-                <div class="textos-interiores contenedor">
-                <p>
-                    Profesor Investigador <br>
-                    Grupo Arte<br>
-                    Depto. Medio Ambiente <br>
-                    División Ciencias y Artes para el Diseño <br>
-                    UAM, Azc.
-                </p>
-            </div>
-            <div class="enlaces-curriculums contenedor">
-                <a href="#" class="resumen">
-                    <strong>CV</strong> Resumen
-                </a>
-                <a href="#" class="extendido">
-                    <strong>CV</strong> Extendido
-                </a>
-            </div>
-            <div class="textos-interiores linea contenedor">
-                <p>
-                    LÍNEA DEL TIEMPO
-                </p>
-            </div>       
-            <div class="footer contenedor">
-            <div class="">
-                    <div class="textos-interiores display-tablet">
-                <img src="build/img/logos/uam.svg" alt="UAM">
-                <h3>Contacto</h3>
-                <p class="size-14">
-                    UAM: 55 53 18 9187 y 9189 <br>
-                    ext. 5575 <br><br>
-
-                    Correos electrónicos: <br>
-                    <a href="mailto:mgart@azc.uam.mx">mgart@azc.uam.mx</a> <br>
-                    <a href="mailto:mgart1000@gmail.com">mgart1000@gmail.com</a>
-                    <br><br>
-
-                    WhatsApp: 55 2936 0072 <br><br>
-
-                    Todas las fotografías <br> pertenecen al <br> Matro. Mauricio Benito <br> Guerrero Alarcón
-                    <br><br>Sitio por <a href="#" target="_blank" rel="noopener noreferrer">Bk Studio</a>
-                </p>
-
-            </div>
-            </div>
-            
-        </div>
-        </div>
-           
-<div class="contenedor">
-<div class="layout right ">
-
-                    <div class="enlaces">
-                        <a href="academico.php">Acádemico</a>
-                        <a href="profesional.php">Profesional</a>
-                    </div>
-          
-            <!-- Aquí va a ir el grid-->
-            <div class="columna contenido-interno">
-                <div class="grid">
+    <div id="proyectos" class="internas">
+    <div class="menu-diagonal">
+        <?php 
+            includeTemplate('menu.php',true);
+            includeTemplate('menu-lateral.php',true);
+        ?>
+    </div>
+        <div class="contenedor">
+           <div class="layout right ">
+                <div class="enlaces">
+                </div>
+                <!-- Aquí va a ir el grid-->
+                <div class="columna contenido-interno">
+                    <div class="grid">
                         <ul>
                             <li></li>
-                            <li></li>
+                            <li>
+                            <a href="#" class="">
+                                    <img src="build/img/proyectos/juego_sustentabilidad2015.jpg" alt="tablero">
+                                    <div class="overlay overlayverdePizarron">
+                                        <p>
+                                            El juego de la sustenabilidad <br>
+                                            <i>- 2015 -</i>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
                             <li>
                                 <a href="#" class="">
                                     <img src="build/img/proyectos/juego_sustentabilidad2015.jpg" alt="tablero">
@@ -223,7 +185,79 @@ includeTemplate('header.html',false);
                                     </p>
                                 </div>
                             </li>
-                        <li>
+                            <li>
+                                <img src="build/img/proyectos/tetraedro1977.jpg" alt="200">
+                                <div class="overlay overlayazulGrisOscuro">
+                                    <p>
+                                        Tetraedro <br>
+                                        <i>- 1977 -</i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="build/img/proyectos/arte_correo1976-1986.jpg" alt="200">
+                                <div class="overlay overlayNegro">
+                                    <p>
+                                        Arte correo<br>
+                                        <i>- 1976 - 1986 -</i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="build/img/proyectos/libro_objeto1978.jpg" alt="200">
+                                <div class="overlay overlayGuinda">
+                                    <p>
+                                        Libro objeto<br>
+                                        <i>- 1978 -</i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="build/img/proyectos/nuevas_tendencias1978.jpg" alt="200">
+                                <div class="overlay overlayHueso">
+                                    <p>
+                                        Nuevas tendencias <br>
+                                        <i>- 1978 -</i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="build/img/proyectos/tetraedro1977.jpg" alt="200">
+                                <div class="overlay overlayazulGrisOscuro">
+                                    <p>
+                                        Tetraedro <br>
+                                        <i>- 1977 -</i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="build/img/proyectos/arte_correo1976-1986.jpg" alt="200">
+                                <div class="overlay overlayNegro">
+                                    <p>
+                                        Arte correo<br>
+                                        <i>- 1976 - 1986 -</i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="build/img/proyectos/libro_objeto1978.jpg" alt="200">
+                                <div class="overlay overlayGuinda">
+                                    <p>
+                                        Libro objeto<br>
+                                        <i>- 1978 -</i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="build/img/proyectos/nuevas_tendencias1978.jpg" alt="200">
+                                <div class="overlay overlayHueso">
+                                    <p>
+                                        Nuevas tendencias <br>
+                                        <i>- 1978 -</i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
                                 <img src="build/img/proyectos/tetraedro1977.jpg" alt="200">
                                 <div class="overlay overlayazulGrisOscuro">
                                     <p>
@@ -233,14 +267,61 @@ includeTemplate('header.html',false);
                                 </div>
                             </li>
                         </ul>
+                        <ul>
+                            <li></li>
+                            <li>
+                            <a href="#" class="">
+                                    <img src="build/img/proyectos/juego_sustentabilidad2015.jpg" alt="tablero">
+                                    <div class="overlay overlayverdePizarron">
+                                        <p>
+                                            El juego de la sustenabilidad <br>
+                                            <i>- 2015 -</i>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <img src="build/img/proyectos/juego_sustentabilidad2015.jpg" alt="tablero">
+                                    <div class="overlay overlayverdePizarron">
+                                        <p>
+                                            El juego de la sustenabilidad <br>
+                                            <i>- 2015 -</i>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <img src="build/img/proyectos/tortuguitas2005.jpg" alt="Tortuguitas">
+                                    <div class="overlay overlayAzulRey">
+                                        <p>
+                                        <i>Tortuguitas</i><br>
+                                            <i>- 2015 -</i>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     </div>
         
                 </div>
             </div>
-        </div>  
-</div>
-    <?php 
-include 'includes/templates/footer.html';
 
-?>
+            </div> 
+        </div>
+
+        <footer>
+            <div id="contacto" class="footer-interno">
+                    <p>
+                        Todos los derechos pertenecen al Matro. Mauricio Benito Guerrero Alarcón
+                        <br>
+                        Sitio por <a href="#">BK Studio</a>
+                </p>
+            </div>
+        </footer> 
+    </div>
+    <script src="build/js/bundle.js"></script>
+</body>
+</html>
